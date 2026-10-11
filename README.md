@@ -6,6 +6,7 @@ Author : [Ali Cool](https://github.com/AliCool412)
 
 A theme that basically turns all background elements transparent to allow for Windows 11 Mica Backdrop.
 Best used on with the "CEF/Spotify Tweaks" Windhawk mod to allow the transparent rendering, or however you can enable transparent rendering otherwise.
+Thanks to Ingan121 for making this theme work as intended!
 
 ### Required CEF/Spotify Tweaks
 
