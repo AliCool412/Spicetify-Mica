@@ -88,9 +88,7 @@
 .kMUtWcOMOZmCWTMAc_gu,
 .M7ECcaA17LC8UqL2GKVD,
 .main-actionBarBackground-background,
-.main-entityHeader-topbarContent,
 .kMUtWcOMOZmCWTMAc_gu,
-.main-topBar-background,
 .kflHPd1wGLg8GjJjmpc6,
 .b0kbWFp7K9_JqU7W7FqI,
 .sxMpFt17cJVTesE9u6fX,
@@ -100,15 +98,20 @@
 .FYt64RVcdU2DfYVJOH4W,
 .V7ICuEr1ZBtemPGKXeZb,
 .OxcpGT2yLq52q4F4aiCr,
-.BFsAktnIfCii8eYPlO6g{
+.BFsAktnIfCii8eYPlO6g,
+.main-topBar-overlay,
+.search-searchCategory-carouselButton,
+.zKOK3uU0cYoNyLe3mfT1,
+.ykHt2dbXUBFWx1wiYPbR:after{
   display: none !important;
 }
 
-/* And this here is a whole list of playlist/homepage/album top gradients to be hidden as it interferes with the theme BADLY. */
+/* And this here is a whole list of playlist/homepage/album top gradients to be hidden as it interferes with the theme BADLY, along with the hover button for "expand library" */
 
 .NG0KBybUCTo8_SxXHF3N,
 .iLPntCcS2p5RQ6lINAgx,
-.Ac2raqVCOQ_HYbbCkBAP{
+.Ac2raqVCOQ_HYbbCkBAP,
+.main-topBar-background{
   --background-base: var(--background-elevated-base) !important;
   border-radius: 12px !important;
 }
@@ -130,7 +133,10 @@
 .NeTYdM9FpYcvpF47Z8Y4,
 .rl0QlbVbrvgO0fB5Pkua,
 .Yp3YJJf7sEsbrbtr94Av,
-.fRjoXDS7lH4DqafUORLn{
+.fRjoXDS7lH4DqafUORLn,
+.main-entityHeader-shadow,
+.x-entityImage-imageContainer,
+.main-trackList-trackListHeader{
   box-shadow: 0 0px 0px !important;
 }
 
@@ -155,7 +161,8 @@
 
 .zyugqDUpsiWa8v7oczU1,
 .CpEaNOB66nFcZNUZA2wg,
-.rl0QlbVbrvgO0fB5Pkua{
+.rl0QlbVbrvgO0fB5Pkua,
+.main-trackList-trackListHeader{
   border-top: none !important;
   border-bottom: none !important;
 }
@@ -190,7 +197,8 @@
 /* This here is a fix for icons inside menus looking a bit off in scaling under 100%. */
 
 .uCpbyRyKRYhEnUmXhDjT,
-.mWDxoEl19Pld4at5Bbho{
+.mWDxoEl19Pld4at5Bbho,
+.z5xXvo0plHA8HMaC0sJp{
   --spice-highlight-elevated: transparent !important;
   background: transparent !important;
 }
@@ -216,7 +224,9 @@
 .x4nQPvl5jCXXKJ2sJ9Hk:before,
 .x4nQPvl5jCXXKJ2sJ9Hk:after,
 .YOYIfKkABUDGQ5vQmg7y:after,
-.oCSWtOAH_CgjIsi_H_PS{
+.oCSWtOAH_CgjIsi_H_PS,
+.search-searchCategory-contentArea:before,
+.search-searchCategory-contentArea:after{
   background: transparent !important;
 }
 
@@ -224,7 +234,8 @@
 
 .ap_ioWdVFWJkrRicJB8C,
 .iLPntCcS2p5RQ6lINAgx,
-.YOYIfKkABUDGQ5vQmg7y{
+.YOYIfKkABUDGQ5vQmg7y,
+.g8bL3bGxc63nO5u9gY7g,{
   position: static !important;
 }
 
