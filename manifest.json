@@ -1,6 +1,6 @@
 {
-	"name": "Transparent Rendering",
-	"description": "Enables Utilization of Transparent Rendering on Windows",
+	"name": "Mica",
+	"description": "Enables Utilization of Transparent Rendering, Mainly for Windows 11 Mica Backdrop.",
 	"preview": "Preview.png",
 	"readme": "README.md",
 	"usercss": "user.css",
