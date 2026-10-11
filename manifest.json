@@ -8,5 +8,5 @@
 	"authors": [
 		{ "name": "Ali Cool", "url": "https://github.com/AliCool412" },
 	],
-	"tags": ["transparent"]
+	"tags": ["transparent"]["external js"]
 }
