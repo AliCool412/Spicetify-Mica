@@ -1,29 +1,20 @@
-# Transparent Rendering
+# Spicetify Mica
 
 Author : [Ali Cool](https://github.com/AliCool412)
 
 ## About
 
-A theme that basically turns all background elements transparent (except menus and tooltips, of course) to allow for dark mode backdrop implementation, with a few UI fixes such as full-height artist bannersand removal of top gradient.
-Best used on with the "CEF/Spotify Tweaks" Windhawk mod to allow the transparent rendering, and "Translucent Windows" Windhawk mod to force the spotify window to use Backdrop Materials of your choice.
-Alternatively, MicaForEveryone can be used in place of the "Translucent Windows" Windhawk mod.
+A theme that basically turns all background elements transparent to allow for Windows 11 Mica Backdrop.
+Best used on with the "CEF/Spotify Tweaks" Windhawk mod to allow the transparent rendering, or however you can enable transparent rendering otherwise.
 
 ### Required CEF/Spotify Tweaks
 
-![Windhawk](Windhawk.png)
-
-- **Enable native frames and title bars on the main window**
-  to allow for correct backdrop implementation, keeping this disabled will result in the backdrop breaking with any resize/maximize/fullscreen operation.
 - **Enable transparent rendering**
   to allow your backdrop of choice to be used in spotify, make sure the options for "Extend into client area" (depending on whether you use the Windhawk Mod or MicaForEveryone) is enabled.
 - **Disable forced dark mode**
   Spotify by default adds a dark tint to the window, keeping that enabled will impact the backdrop being used.
 
 ## Screenshots
-
-### Playlist Overscroll
-
-![PlaylistOverscroll](PlaylistOverscroll.png)
 
 ### Album
 
@@ -32,7 +23,3 @@ Alternatively, MicaForEveryone can be used in place of the "Translucent Windows"
 ### Artist Page
 
 ![Artist](Artist.png)
-
-### The Theme without Windhawk
-
-![NoWindhawk](NoWindhawk.png)
