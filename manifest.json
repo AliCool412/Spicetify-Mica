@@ -6,7 +6,10 @@
 	"usercss": "user.css",
 	"schemes": "color.ini",
 	"authors": [
-		{ "name": "Ali Cool", "url": "https://github.com/AliCool412" },
+		{
+			"name": "Ali Cool",
+			"url": "https://github.com/AliCool412"
+		},
 	],
 	"tags": ["transparent", "dark"]
 }
