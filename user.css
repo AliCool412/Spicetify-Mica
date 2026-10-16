@@ -1,5 +1,4 @@
-:root{
-  --spice-card: transparent !important;
+:root {
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
   --spice-main: none !important;
@@ -157,11 +156,16 @@
 .Mx14wT9OS2W16j43a7_g,
 .JhOTA2pevTUzQPJ7GJG0,
 .NMt6sLFwXdQoCRD6zzVJ,
-.gFwQKjIgLpQmNF0YUpUm{
+.gFwQKjIgLpQmNF0YUpUm,
+.m1Mu5Zk_CByqB1Xh6iNC,
+.tbPIAwdW7uiECFyrL7hZ,
+.b_2tITQ1zWWjRCV_c9sW,
+.ArpdzWdgRW_8lwpikPGW,
+.WAc4pJu2EshSMM7cQK9c{
   box-shadow: 0 0px 0px !important;
 }
 
-/* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar. */
+/* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
 
 .d7rHODV83neFiPSeUqDB:after,
 .TmjKsp7ZdmzlG9vtR_94:after{
