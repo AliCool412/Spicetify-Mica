@@ -298,3 +298,23 @@ dialog button,
 }
 
 /* This one's also for dialog boxes, does the same thing. */
+
+._qEwikUlZSIdhG1eHl6y,
+._J9UwvtamqPEj5yboIAr,
+.main-nowPlayingView-headerContainer,
+.tlJt8JO80alw0Nlw6iW9,
+.gZpXLJXyMzANBMLPwHdh,
+.WU7dTdoNA51czqGivj8T,
+.Zh3rQRncNEHrT9Zvp61n{
+  position: static !important;
+  box-shadow: 0 0px 0px !important;
+}
+
+/* And this one's for the now playing bar title and the queue title. */
+
+.HuKs8FZg6Y75cV9Lh0Kk,
+.AfKmrZ306qeQTbYQfwLc,
+.caAOfYXiCAm8Vhi8McGl{
+  margin-top: 0px !important;
+}
+/* And this one's for the margin on top of the now playing bar's album cover art. */
