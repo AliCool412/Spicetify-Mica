@@ -322,3 +322,31 @@ dialog button,
   margin-top: 0px !important;
 }
 /* And this one's for the margin on top of the now playing bar's album cover art. */
+
+.SGtaKJxGTMVNxbooL6MS,
+.otkNTxq0HYA5myraxyPM,
+.ZLLC2GclD3PmvhLb2nKg,
+.vBApP4_Oa8AOZwx2NEvV{
+  background: #242424 !important;
+}
+
+/* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
+
+.WDGCR4wjBcw7jSoDr1ei,
+.yqQQ3a6EliT3QqxuMFUq,
+.Gs2EwEu259e_Q_vcVyCx,
+.x9WJE0JUEXgHK_YmZoO1{
+  outline: none !important;
+  border-radius: 8px !important;
+}
+
+/* This is for the outline of the lyrics page. */
+
+.XsSWx3aR_OYA3GMIEk7S:before,
+.bTl2te1IUWrzwYZ0DTpc:before,
+.yPshcpMuntyejAV1GqNF:before,
+.mfJiX8d9Ng2rmd1PJqLZ:before{
+  background: none !important;
+}
+
+/* This one's for the drop shadow in the lyrics page. */
