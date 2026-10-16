@@ -8,7 +8,9 @@ A theme that basically turns all background elements transparent to allow for Wi
 
 Best used with the "CEF/Spotify Tweaks" Windhawk mod to allow the transparent rendering, or however you can enable transparent rendering otherwise.
 
-Special Thanks to [Ingan121](https://github.com/Ingan121) for helping make this theme work as intended!
+Special Thanks to [Ingan121](https://github.com/Ingan121) for helping make this theme work as intended! he also made the Windhawk mod mentioned above.
+
+Works as intended on versions 1.3.0.277 through 1.3.5.3058
 
 ### Required CEF/Spotify Tweaks
 
