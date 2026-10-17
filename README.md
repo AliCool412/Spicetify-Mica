@@ -10,7 +10,7 @@ Best used with the "CEF/Spotify Tweaks" Windhawk mod to allow the transparent re
 
 Special Thanks to [Ingan121](https://github.com/Ingan121) for helping make this theme work as intended! he also made the Windhawk mod mentioned above.
 
-Works as intended on versions 1.3.0.277 through 1.3.5.3058
+Works as intended on versions 1.3.0 through 1.3.6
 
 ### Required CEF/Spotify Tweaks
 
