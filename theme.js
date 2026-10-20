@@ -1,17 +1,13 @@
 (async function initMicaTheme() {
-    
-    while (!document.body || typeof window.cancelEsperantoCall !== 'function') {
+    while (!window.Spicetify || !Spicetify.Platform || !document.body) {
         await new Promise((resolve) => setTimeout(resolve, 100));
     }
-
     try {
-        const whModule = window.cancelEsperantoCall('ctewh');
-        if (whModule && typeof whModule.setBackdrop === 'function') {
-            whModule.extendFrame(-1, -1, -1, -1);
-            whModule.setBackdrop('mica');
-            console.log("Mica backdrop applied via theme.js!");
-        }
+        const whModule = cancelEsperantoCall('ctewh');
+        whModule.extendFrame(-1, -1, -1, -1);
+        whModule.setBackdrop('mica');
+        console.log("Mica backdrop applied successfully!");
     } catch (err) {
-        console.error("Mica theme error:", err);
+        console.error("Failed to apply Mica backdrop:", err);
     }
 })();
