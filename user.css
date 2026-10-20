@@ -357,7 +357,11 @@ dialog button,
 }
 
 .Dropdown-option:hover{
-  background: #343434
+  background: #343434 !important;
 }
 
-/* Those are both for dropdown menus. */
+.Dropdown-option.is-selected{
+  background: #444444 !important;
+}
+
+/* Those are all for dropdown menus. */
