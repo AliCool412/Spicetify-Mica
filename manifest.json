@@ -5,7 +5,7 @@
     "readme": "README.md",
     "usercss": "user.css",
     "schemes": "color.ini",
-    "include": ["theme.js"],
+    "include": ["https://cdn.jsdelivr.net/gh/AliCool412/Spicetify-Mica@main/theme.js"],
     "authors": [
         {
             "name": "Ali Cool",
