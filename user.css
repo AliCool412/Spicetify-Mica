@@ -353,6 +353,11 @@ dialog button,
 
 .Dropdown-menu{
   background: #242424 !important;
+  max-height: max-content !important;
 }
 
-/* This one is for dropdown menus */
+.Dropdown-option:hover{
+  background: #343434
+}
+
+/* Those are both for dropdown menus. */
