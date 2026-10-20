@@ -7,7 +7,5 @@
         whModule.extendFrame(-1, -1, -1, -1);
         whModule.setBackdrop('mica');
         console.log("Mica backdrop applied successfully!");
-    } catch (err) {
-        console.error("Failed to apply Mica backdrop:", err);
-    }
+    } catch
 })();
