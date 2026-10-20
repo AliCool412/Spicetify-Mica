@@ -6,8 +6,8 @@
         const whModule = cancelEsperantoCall('ctewh');
         whModule.extendFrame(-1, -1, -1, -1);
         whModule.setBackdrop('mica');
-        console.log("Mica Applied YAYY");
+        console.log("Mica backdrop applied successfully!");
     } catch (err) {
-        console.error("No Mica:", err);
+        console.error("Failed to apply Mica backdrop:", err);
     }
 })();
