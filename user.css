@@ -350,3 +350,9 @@ dialog button,
 }
 
 /* This one's for the drop shadow in the lyrics page. */
+
+.Dropdown-menu{
+  background: #242424 !important;
+}
+
+/* This one is for dropdown menus */
