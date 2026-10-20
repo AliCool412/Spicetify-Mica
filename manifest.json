@@ -1,16 +1,16 @@
 {
-	"name": "Spicetify Mica",
-	"description": "Enables Utilization of Mainly for Windows 11 Mica Backdrop.",
-	"preview": "Preview.png",
-	"main":"theme.js"
-	"readme": "README.md",
-	"usercss": "user.css",
-	"schemes": "color.ini",
-	"authors": [
-		{
-			"name": "Ali Cool",
-			"url": "https://github.com/AliCool412"
-		},
-	],
-	"tags": ["transparent", "dark"]
+    "name": "Spicetify Mica",
+    "description": "Enables Utilization of Mainly for Windows 11 Mica Backdrop.",
+    "preview": "Preview.png",
+    "readme": "README.md",
+    "usercss": "user.css",
+    "schemes": "color.ini",
+    "include": ["theme.js"],
+    "authors": [
+        {
+            "name": "Ali Cool",
+            "url": "https://github.com/AliCool412"
+        }
+    ],
+    "tags": ["transparent", "dark"]
 }
