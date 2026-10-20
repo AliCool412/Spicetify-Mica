@@ -2,6 +2,7 @@
 	"name": "Spicetify Mica",
 	"description": "Enables Utilization of Mainly for Windows 11 Mica Backdrop.",
 	"preview": "Preview.png",
+	"main":"theme.js"
 	"readme": "README.md",
 	"usercss": "user.css",
 	"schemes": "color.ini",
