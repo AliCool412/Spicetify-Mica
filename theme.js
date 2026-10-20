@@ -8,6 +8,6 @@
         whModule.setBackdrop('mica');
         console.log("Mica Applied YAYY");
     } catch (err) {
-        console.error("No Mica :(", err);
+        console.error("No Mica:", err);
     }
 })();
