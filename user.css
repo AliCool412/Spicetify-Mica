@@ -204,10 +204,11 @@
 .bUVkyYuHPJ19V664vzfA,
 .GGdJC1J_rstFzsYLyQhu,
 .DqIqydL5_xt1AQWeNGNR,
-.fF97jAvlGYYHbI3_vPlV{
+.fF97jAvlGYYHbI3_vPlV,
+[aria-label="Equalizer"]{
   filter: saturate(0%) !important;
 }
-/* This one's to make the playing GIF become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
+/* This one's to make the playing GIF and equalizer become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
 
 .marketplace-header{
   position: relative !important;
