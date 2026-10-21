@@ -67,14 +67,6 @@
 
 /* And this here is to remove the playback bar play button's circle. */
 
-.main-nowPlayingBar-container button[aria-label="Play"] svg,
-.main-nowPlayingBar-container button[aria-label="Pause"] svg,
-.main-nowPlayingBar-container .main-playPauseButton-button svg{
-  fill: var(--encore-icon-fill,currentColor) !important;
-}
-
-/* And this here is to correct the color of the aforementioned play button. */
-
 .SZZaGSgPlvbMy6EmCYPy,
 .IA4iGG9XYovF8ZeEsq8A,
 .b2Yn_b_y4_oqj7M_5AP0,
