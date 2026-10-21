@@ -276,12 +276,6 @@
 
 /* This one's for fixing the position of the TopBar of the homepage. */
 
-dialog {
-  background-color: #242424 !important;
-}
-
-/* This one's for the popups. */
-
 dialog button,
 [role="dialog"] button{
   background: transparent !important;
@@ -296,6 +290,7 @@ dialog button,
 
 /* This one's to make dialog boxes have a background. */
 
+dialog,
 .ReactModalPortal [role="dialog"]{
   background: #242424 !important;
   border-radius: 8px !important;
