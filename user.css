@@ -365,3 +365,9 @@ dialog button,
 }
 
 /* Those are all for dropdown menus. */
+
+svg:hover{
+  fill: var(--text-base) !important;
+}
+
+/* This is to make svg icons fully white when hovered */
