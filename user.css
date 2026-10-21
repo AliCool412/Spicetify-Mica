@@ -292,6 +292,7 @@ dialog button,
 /* This one's to make dialog boxes have a background. */
 
 dialog,
+dialog .encore-light-theme,
 .ReactModalPortal [role="dialog"]{
   background: #242424 !important;
   border-radius: 8px !important;
