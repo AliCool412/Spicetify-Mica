@@ -4,7 +4,7 @@ Author : [Ali Cool](https://github.com/AliCool412)
 
 ## About
 
-A theme that basically turns all background elements transparent to allow for Windows 11 Mica Backdrop, dark mode only.
+A theme that basically turns all background elements transparent to allow for Windows 11 Mica Backdrop, or the user's backdrop of choice, dark mode only.
 
 Best used with [CEF/Spotify Tweaks](https://windhawk.net/mods/cef-titlebar-enabler-universal) windhawk mod, or [libcef-transparencey-linux](https://github.com/fixpointer/libcef-transparency-linux) by [fixpointer](https://github.com/fixpointer)
 
