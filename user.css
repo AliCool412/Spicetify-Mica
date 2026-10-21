@@ -3,8 +3,8 @@
   --spice-sidebar: none !important;
   --spice-main: none !important;
   --background-noise: #00000099 !important;
-  --spice-button-active: var(--current-color) !important;
-  --spice-button: var(--current-color) !important;
+  --spice-button-active: var(--spice-subtext) !important;
+  --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
   --encore-icon-fill: var(--current-color) !important;
   --text-bright-accent: var(--current-color) !important;
