@@ -1,3 +1,5 @@
+'use strict';
+
 try {
     const whModule = cancelEsperantoCall('ctewh');
     whModule.extendFrame(-1, -1, -1, -1);
