@@ -1,16 +1,28 @@
-(async function initMicaTheme() {
-    while (!document.body) {
-        await new Promise((resolve) => setTimeout(resolve, 100));
+(function initMicaTheme() {
+    function applyMica() {
+        if (typeof window.cancelEsperantoCall === 'function') {
+            try {
+                const whModule = window.cancelEsperantoCall('ctewh');
+                if (whModule && typeof whModule.setBackdrop === 'function') {
+                    whModule.extendFrame(-1, -1, -1, -1);
+                    whModule.setBackdrop('mica');
+                    console.log("Mica backdrop applied automatically!");
+                    return true;
+                }
+            } catch (err) {
+                console.error("Mica theme error:", err);
+            }
+        }
+        return false;
     }
 
-    try {
-        if (typeof cancelEsperantoCall === 'function') {
-            const whModule = cancelEsperantoCall('ctewh');
-            whModule.extendFrame(-1, -1, -1, -1);
-            whModule.setBackdrop('mica');
-            console.log("Mica backdrop applied locally!");
+    if (applyMica()) return;
+
+    const interval = setInterval(() => {
+        if (applyMica()) {
+            clearInterval(interval);
         }
-    } catch (err) {
-        console.error("Mica theme error:", err);
-    }
+    }, 200);
+
+    setTimeout(() => clearInterval(interval), 15000);
 })();
