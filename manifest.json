@@ -3,7 +3,7 @@
     "description": "Enables Utilization of Windows 11 Mica Backdrop.",
     "preview": "Preview.png",
     "readme": "README.md",
-    "usercss": "https://cdn.jsdelivr.net/gh/AliCool412/Spicetify-Mica@main/user.css",
+    "usercss": "user.css",
     "schemes": "color.ini",
     "include": ["https://cdn.jsdelivr.net/gh/AliCool412/Spicetify-Mica@main/theme.js"],
     "authors": [
