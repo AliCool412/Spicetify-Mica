@@ -154,7 +154,8 @@
 .tbPIAwdW7uiECFyrL7hZ,
 .b_2tITQ1zWWjRCV_c9sW,
 .ArpdzWdgRW_8lwpikPGW,
-.WAc4pJu2EshSMM7cQK9c{
+.WAc4pJu2EshSMM7cQK9c,
+.e-101040-overflow-wrap-anywhere{
   box-shadow: 0 0px 0px !important;
 }
 
@@ -198,6 +199,7 @@
 .GGdJC1J_rstFzsYLyQhu,
 .DqIqydL5_xt1AQWeNGNR,
 .fF97jAvlGYYHbI3_vPlV,
+.e-101040-button__icon-wrapper
 [aria-label="Equalizer"]{
   filter: saturate(0%) !important;
 }
@@ -233,13 +235,15 @@
 /* This one's for the updated create button (with the playlist/folder/jam/mixed playlist/blend options). */
 
 .g6z9DmqJ8tbdUBNlRC4e,
-.e-10860-legacy-button{
+.e-10860-legacy-button,
+.e-101040-legacy-button{
   --text-bright-accent: var(--current-color) !important;
 }
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-[role="alert"] .e-10860-legacy-box{
+[role="alert"] .e-10860-legacy-box,
+[role="alert"] .e-101040-legacy-box{
   background: #242424 !important;
 }
 
