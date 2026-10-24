@@ -55,7 +55,8 @@
 
 /* This is for artists' pages banners being used as the full page's background, as there is no way to implement a dynamically changing backdrop with the banner picture of artists other than to make the entire background be the artist's banner, if you have a better implementation, please enlighten me, or do it yourself, this isn't sarcastic or demeaning btw I'm being so fr here. */
 
-.e-10860-overflow-wrap-anywhere{
+.e-10860-overflow-wrap-anywhere,
+.e-101040-overflow-wrap-anywhere{
   --background-highlight: transparent !important;
   --background-press: transparent !important;
   --spice-button-active: transparent !important;
@@ -208,7 +209,8 @@
 
 /* As I mentioned earlier, the marketplace header is getting a similar treatment */
 
-.e-10860-legacy-button-primary{
+.e-10860-legacy-button-primary,
+.e-101040-legacy-button-primary{
  --encore-graphic-size-decorative-base: 48px !important;
 }
 
