@@ -384,10 +384,3 @@ svg:hover{
 }
 
 /* This is to hide the NPV Peek */
-
-.main-nowPlayingBar-container{
-  margin-right: 8px !important;
-  margin-left: 8px !important;
-}
-
-/* This is to equalize the side margins of the playback bar */
