@@ -14,11 +14,13 @@
 
 /* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
 
-.main-view-container{
+.main-view-container,
+.main-nowPlayingBar-nowPlayingBar{
   background: #ffffff11 !important;
+  border-radius: 8px !important;
 }
 
-/* This one's for the main view being a bit less translucent than the rest */
+/* This one's for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
 .main-contextMenu-menuItem,
