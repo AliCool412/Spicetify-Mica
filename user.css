@@ -14,6 +14,12 @@
 
 /* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
 
+.main-view-container{
+  background: #ffffff11 !important;
+}
+
+/* This one's for the main view being a bit less translucent than the rest */
+
 .main-contextMenu-menu,
 .main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
@@ -199,7 +205,8 @@
 .GGdJC1J_rstFzsYLyQhu,
 .DqIqydL5_xt1AQWeNGNR,
 .fF97jAvlGYYHbI3_vPlV,
-.e-101040-button__icon-wrapper
+.e-101040-button__icon-wrapper,
+.view-homeShortcutsGrid-equaliserImage,
 [aria-label="Equalizer"]{
   filter: saturate(0%) !important;
 }
