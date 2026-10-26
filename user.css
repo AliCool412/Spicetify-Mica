@@ -253,7 +253,7 @@
 
 [role="alert"] .e-10860-legacy-box,
 [role="alert"] .e-101040-legacy-box{
-  background: #242424 !important;
+  background: #2B2B2B !important;
 }
 
 /*  And this one's for the background of the aforementioned popups. */
@@ -292,7 +292,7 @@ dialog button,
 /* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
 
 .ReactModalPortal .encore-light-theme {
---background-base: #242424 !important;
+--background-base: #2B2B2B !important;
   border-radius: 8px !important;
 }
 
@@ -301,7 +301,7 @@ dialog button,
 dialog,
 dialog .encore-light-theme,
 .ReactModalPortal [role="dialog"]{
-  background: #242424 !important;
+  background: #2B2B2B !important;
   border-radius: 8px !important;
 }
 
@@ -331,7 +331,8 @@ dialog .encore-light-theme,
 .otkNTxq0HYA5myraxyPM,
 .ZLLC2GclD3PmvhLb2nKg,
 .vBApP4_Oa8AOZwx2NEvV{
-  background: #242424 !important;
+  background: #2B2B2B !important;
+  width: 100.6% !important;
 }
 
 /* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
@@ -356,7 +357,7 @@ dialog .encore-light-theme,
 /* This one's for the drop shadow in the lyrics page. */
 
 .Dropdown-menu{
-  background: #242424 !important;
+  background: #2B2B2B !important;
   max-height: max-content !important;
 }
 
