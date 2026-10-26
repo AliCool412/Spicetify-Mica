@@ -375,3 +375,18 @@ svg:hover{
 }
 
 /* This is to make svg icons fully white when hovered */
+
+.vmkoQ3oMgW4BfU_WfoFk,
+.xYEVHUdpjHxilQRQuYPQ,
+.ps0EG24hmbstiZo9P7fu{
+  display: none !important;
+}
+
+/* This is to hide the NPV Peek */
+
+.main-nowPlayingBar-container{
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+}
+
+/* This is to equalize the side margins of the playback bar */
