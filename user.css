@@ -384,3 +384,10 @@ svg:hover{
 }
 
 /* This is to hide the NPV Peek */
+
+[id="main-view"]{
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+/* This is to even out the width of main view after the removal of Peek NPV */
