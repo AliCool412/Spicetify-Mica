@@ -4,7 +4,7 @@ Author : [Ali Cool](https://github.com/AliCool412)
 
 ## About
 
-Theme for Spicetify inspired by UWP Windows Media Player, dark mode only.
+Theme for Spicetify Inspired by UWP Windows Media Player, for dark mode only.
 
 Best used with [CEF/Spotify Tweaks](https://windhawk.net/mods/cef-titlebar-enabler-universal) windhawk mod, to allow for transparency implementation.
 
