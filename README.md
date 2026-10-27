@@ -4,7 +4,7 @@ Author : [Ali Cool](https://github.com/AliCool412)
 
 ## About
 
-A theme that basically turns all background elements transparent to mainly allow for Windows 11 Mica Backdrop, dark mode only.
+Theme for Spicetify inspired by UWP Windows Media Player, dark mode only.
 
 Best used with [CEF/Spotify Tweaks](https://windhawk.net/mods/cef-titlebar-enabler-universal) windhawk mod, to allow for transparency implementation.
 
