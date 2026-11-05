@@ -406,5 +406,8 @@ svg:hover{
 .marketplace-header__button {
   color: #000000 !important;
 }
+[data-testid="now-playing-bar"] {
+  --background-elevated-base: none !important;
+}
 
 /* This is to fix some fonts and whatnot */
