@@ -10,6 +10,7 @@
   --text-bright-accent: var(--current-color) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
+  --background-base: #00000000 !important;
 }
 
 /* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
