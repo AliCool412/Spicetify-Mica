@@ -3,7 +3,6 @@
   --spice-sidebar: none !important;
   --spice-main: none !important;
   --background-noise: #00000099 !important;
-  --spice-button-active: var(--spice-subtext) !important;
   --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
   --encore-icon-fill: var(--current-color) !important;
@@ -393,3 +392,16 @@ svg:hover{
 }
 
 /* This is to even out the width of main view after the removal of Peek NPV */
+
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
+.marketplace-add-snippet-btn{
+  fill: #000000 !important;
+}
+.marketplace-add-snippet-btn,
+.marketplace-grid,
+.spicetify-popup button,
+.marketplace-card-desc{
+  font-family: var(--encore-body-font-stack) !important;
+}
+
+/* This is to fix some fonts and whatnot */
