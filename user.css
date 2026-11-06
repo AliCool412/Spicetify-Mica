@@ -424,8 +424,8 @@ input {
 
 /* This is to fix the width of marketplace navigation bar */
 
-.Root__top-container:has(.yQCyOSVcMCen_NJKPHB6.SGtaKJxGTMVNxbooL6MS) .main-view-container,
-.Root__top-container:has(.yQCyOSVcMCen_NJKPHB6.SGtaKJxGTMVNxbooL6MS) [data-testid=topbar]{
+.Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) .main-view-container,
+.Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) [data-testid="topbar"] {
   display: none !important;
 }
 /* This is to make sure the main view becomes transparent when library expanded */
