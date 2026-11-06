@@ -129,7 +129,7 @@
 .main-topBar-background,
 .B_NENXC7AHTEKsYhv3qv{
   --background-base: var(--background-elevated-base) !important;
-  border-radius: 12px !important;
+  border-radius: 8px !important;
 }
 
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
@@ -180,8 +180,9 @@
 .ap_ioWdVFWJkrRicJB8C,
 [data-testid="topbar"]{
   margin-left: 0.5% !important;
-  width: 99% !important;
+  width: fit-content !important;
   margin-top: 0.5% !important;
+  padding-right: 8px
 }
 
 /* This one's for the aforementioned "Main TopBar". */
