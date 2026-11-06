@@ -412,3 +412,9 @@ svg:hover{
 }
 
 /* This is to fix some fonts and whatnot */
+
+.marketplace-tabBar{
+  width: 500px !important;
+}
+
+/* This is to fix the width of marketplace navigation bar */
