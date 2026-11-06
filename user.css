@@ -332,8 +332,7 @@ dialog .encore-light-theme,
 .otkNTxq0HYA5myraxyPM,
 .ZLLC2GclD3PmvhLb2nKg,
 .vBApP4_Oa8AOZwx2NEvV{
-  background: #2B2B2B !important;
-  width: 100.6% !important;
+  background: #FFFFFF11 !important;
 }
 
 /* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
@@ -421,3 +420,9 @@ input {
 }
 
 /* This is to fix the width of marketplace navigation bar */
+
+.Root__top-container:has(.yQCyOSVcMCen_NJKPHB6.SGtaKJxGTMVNxbooL6MS) .main-view-container,
+.Root__top-container:has(.yQCyOSVcMCen_NJKPHB6.SGtaKJxGTMVNxbooL6MS) [data-testid=topbar]{
+  display: none !important;
+}
+/* This is to make sure the main view becomes transparent when library expanded */
