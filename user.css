@@ -293,7 +293,7 @@ dialog button,
 
 dialog,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]{
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
   background: #2B2B2B !important;
   border-radius: 8px !important;
 }
@@ -402,7 +402,7 @@ svg:hover{
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input {
+input:not([aria-label="Search"] input) {
   background: #2B2B2B99 !important;
   border-radius: 500px !important;
 }
