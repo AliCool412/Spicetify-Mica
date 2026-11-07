@@ -406,6 +406,9 @@ input:not([aria-label="Search"] input) {
   background: #2B2B2B99 !important;
   border-radius: 500px !important;
 }
+textarea{
+  background: #2B2B2B99 !important;
+}
 
 /* This is to fix some fonts and whatnot */
 
