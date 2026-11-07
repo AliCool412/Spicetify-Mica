@@ -412,12 +412,6 @@ textarea{
 
 /* This is to fix some fonts and whatnot */
 
-.marketplace-tabBar{
-  width: 500px !important;
-}
-
-/* This is to fix the width of marketplace navigation bar */
-
 .Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) .main-view-container,
 .Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) [data-testid="topbar"] {
   display: none !important;
