@@ -10,7 +10,7 @@
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
   --spice-button-active: none !important;
-  --background-elevated-base: #FFFFFF11 !important;
+  --background-elevaated-base: #FFFFFF11 !important;
   --background-highlight: #FFFFFF11 !important;
 }
 
@@ -32,9 +32,15 @@
 [role="menu"],
 [data-tippy-root],
 #context-menu,
-.main-type-tooltip{
+.main-type-tooltip,
+.ReactModalPortal .encore-light-theme,
+dialog,
+dialog .encore-light-theme,
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
   background: #2B2B2B !important;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
+  --background-base: #2B2B2B !important;
+  box-shadow: 0 6px 8px #0003 !important;
 }
 
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
@@ -283,23 +289,7 @@ dialog button,
 }
 
 /* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
-
-.ReactModalPortal .encore-light-theme {
---background-base: #2B2B2B !important;
-  border-radius: 8px !important;
-}
-
-/* This one's to make dialog boxes have a background. */
-
-dialog,
-dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
-  background: #2B2B2B !important;
-  border-radius: 8px !important;
-}
-
-/* This one's also for dialog boxes, does the same thing. */
-
+  
 ._qEwikUlZSIdhG1eHl6y,
 ._J9UwvtamqPEj5yboIAr,
 .main-nowPlayingView-headerContainer,
@@ -352,6 +342,7 @@ dialog .encore-light-theme,
 .Dropdown-menu{
   background: #2B2B2B !important;
   max-height: max-content !important;
+  box-shadow: 0 6px 8px #0003 !important;
 }
 
 .Dropdown-option:hover{
@@ -402,13 +393,15 @@ svg:hover{
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input:not([aria-label="Search"] input) {
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"]){
   background: #2B2B2B99 !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
 }
-textarea{
+textarea,
+.marketplace-code-editor{
   background: #2B2B2B99 !important;
+  border-radius: 16px !important;
 }
 
 /* This is to fix some fonts and whatnot */
