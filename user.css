@@ -404,7 +404,8 @@ svg:hover{
 }
 input:not([aria-label="Search"] input) {
   background: #2B2B2B99 !important;
-  border-radius: 500px !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 32px !important;
 }
 textarea{
   background: #2B2B2B99 !important;
