@@ -415,3 +415,153 @@ textarea,
   display: none !important;
 }
 /* This is to make sure the main view becomes transparent when library expanded */
+
+/* This below has the overrides for light mode */
+
+@media (prefers-color-scheme: light) {
+:root {
+  --spice-main-transition: none !important;
+  --spice-sidebar: none !important;
+  --spice-main: none !important;
+  --background-noise: #FFFFFF99 !important;
+  --spice-button: var(--spice-subtext) !important;
+  --encore-overlay-box-shadow: 0 0px 0px !important;
+  --encore-icon-fill: var(--current-color) !important;
+  --text-bright-accent: var(--current-color) !important;
+  --carousel-start-chevron-gradient: none !important;
+  --essential-bright-accent: var(--spice-text) !important;
+  --spice-button-active: none !important;
+  --background-elevated-base: #00000011 !important;
+  --background-highlight: #00000011 !important;
+  --spice-text: #121212 !important;
+  --spice-subtext: #535353 !important;
+  --text-base: #121212 !important;
+  --text-subdued: #535353 !important;
+  --spice-card: #DDDDDD !important;
+  --spice-rgb-text: #2C2C2C !important;
+  --spice-player: #FFFFFF !important;
+  --spice-tab-active: #2C2C2C2C
+}
+
+:root *{
+  border: none  !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+svg{
+  fill: #121212 !important;
+} 
+  
+/* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
+
+.main-view-container,
+.main-nowPlayingBar-nowPlayingBar{
+  background: #eeeeee !important;
+  border-radius: 8px !important;
+  border: 1px solid #00000022 !important;
+}
+
+[aria-label="Search"] > * > * > *{
+  background-color: #FFFFFF !important;
+}
+
+/* This one's for the main view and playback bar being a bit less translucent than the rest */
+
+.main-contextMenu-menu,
+.main-contextMenu-menuItem,
+.main-dropDown-dropDownMenu,
+.tippy-box,
+.tippy-content,
+[role="menu"],
+[data-tippy-root],
+#context-menu,
+.main-type-tooltip,
+.ReactModalPortal .encore-light-theme,
+dialog,
+dialog .encore-light-theme,
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
+  background: #FFFFFF !important;
+  border-radius: 8px !important;
+  --background-base: #FFFFFF !important;
+  box-shadow: 0 6px 8px #0003 !important;
+}
+
+/* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
+
+.NG0KBybUCTo8_SxXHF3N,
+.iLPntCcS2p5RQ6lINAgx,
+.Ac2raqVCOQ_HYbbCkBAP,
+.main-topBar-background,
+.B_NENXC7AHTEKsYhv3qv{
+  background: #FFFFFFCC !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 8px !important;
+  border: 1px solid #00000022 !important;
+}
+
+/* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
+
+[role="alert"] .e-10860-legacy-box,
+[role="alert"] .e-101040-legacy-box{
+  background: #FFFFFF !important;
+}
+
+/*  And this one's for the background of the aforementioned popups. */
+
+.SGtaKJxGTMVNxbooL6MS,
+.otkNTxq0HYA5myraxyPM,
+.ZLLC2GclD3PmvhLb2nKg,
+.vBApP4_Oa8AOZwx2NEvV{
+  background: #EEEEEE !important;
+  width: 100.6% !important;
+  border: 1px solid #00000022 !important;
+}
+
+/* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
+
+.Dropdown-menu{
+  background: #FFFFFF !important;
+  max-height: max-content !important;
+  box-shadow: 0 6px 8px #0003 !important;
+}
+.Dropdown-control:hover{
+  background: #DDDDDD !important;
+}
+
+.Dropdown-option:hover{
+  background: #34343422 !important;
+}
+
+.Dropdown-option.is-selected{
+  background: #44444422 !important;
+}
+
+/* Those are all for dropdown menus. */
+
+svg:hover{
+  fill: #000000 !important;
+}
+
+/* This is to make svg icons fully black when hovered */
+
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+  fill: #FFFFFF !important;
+}
+.marketplace-add-snippet-btn ,
+.marketplace-header__button {
+  color: #000000 !important;
+}
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"]){
+  background: #EEEEEE !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 32px !important;
+  border: 1px solid #00000022 !important;
+}
+textarea,
+.marketplace-code-editor{
+  background: #EEEEEE !important;
+  border-radius: 16px !important;
+}
+
+/* This is to fix some fonts and whatnot */
+}
