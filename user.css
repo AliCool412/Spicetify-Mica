@@ -549,7 +549,7 @@ svg:hover{
 }
 .marketplace-add-snippet-btn ,
 .marketplace-header__button {
-  color: #000000 !important;
+  background: #FFFFFF !important;
 }
 input:not([aria-label="Search"] input, [aria-label^="Change decibels"]){
   background: #EEEEEE !important;
@@ -561,6 +561,9 @@ textarea,
 .marketplace-code-editor{
   background: #EEEEEE !important;
   border-radius: 16px !important;
+}
+[role="listbox"] > *{
+  background: #EEEEEE !important;
 }
 
 /* This is to fix some fonts and whatnot */
