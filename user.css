@@ -10,7 +10,6 @@
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
   --spice-button-active: none !important;
-  --background-elevaated-base: #FFFFFF11 !important;
   --background-highlight: #FFFFFF11 !important;
 }
 
@@ -427,8 +426,6 @@ textarea,
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
   --spice-button-active: none !important;
-  --background-elevated-base: #00000011 !important;
-  --background-highlight: #00000011 !important;
   --spice-text: #121212 !important;
   --spice-subtext: #535353 !important;
   --text-base: #121212 !important;
@@ -436,7 +433,7 @@ textarea,
   --spice-card: #DDDDDD !important;
   --spice-rgb-text: #2C2C2C !important;
   --spice-player: #FFFFFF !important;
-  --spice-tab-active: #2C2C2C2C
+  --spice-tab-active: #DDDDDD !important;
 }
 
 :root *{
@@ -537,7 +534,6 @@ svg:hover{
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
 .e-101040-legacy-list-row__header-side-flex svg,
 .e-10860-legacy-list-row__header-side-flex svg{
-{
   fill: #FFFFFF !important;
 }
 .marketplace-add-snippet-btn ,
