@@ -11,6 +11,10 @@
   --essential-bright-accent: var(--spice-text) !important;
   --spice-button-active: none !important;
   --background-highlight: #FFFFFF11 !important;
+  --spice-player: #AAAAAA11 !important;
+  --spice-card: #FFFFFF11 !important;
+  --spice-tab-active: #DDDDDD11 !important;
+  --spice-main-elevated: #FFFFFF11 !important;
 }
 
 :root *{
@@ -39,8 +43,8 @@
 dialog,
 dialog .encore-light-theme,
 .ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
-[role="alert"] .e-10860-legacy-box,
-[role="alert"] .e-101040-legacy-box{
+[role="alert"] [class*="legacy-box"],
+.spicetify-popup-container{
   background: #2B2B2B !important;
   border-radius: 8px !important;
   --background-base: #2B2B2B !important;
@@ -75,8 +79,7 @@ dialog .encore-light-theme,
 
 /* This is for artists' pages banners being used as the full page's background, as there is no way to implement a dynamically changing backdrop with the banner picture of artists other than to make the entire background be the artist's banner, if you have a better implementation, please enlighten me, or do it yourself, this isn't sarcastic or demeaning btw I'm being so fr here. */
 
-.e-10860-overflow-wrap-anywhere,
-.e-101040-overflow-wrap-anywhere{
+[class*="overflow-wrap-anywhere"]{
   --background-highlight: transparent !important;
   --background-press: transparent !important;
   --spice-button-active: transparent !important;
@@ -149,7 +152,6 @@ dialog .encore-light-theme,
 
 .XigLZTcvt6fiLkosJfYh,
 .miQxkQPT6ObnldFON6FU,
-.e-10860-overflow-wrap-anywhere,
 .zyugqDUpsiWa8v7oczU1,
 .At_PezR11Vm2qa_1CMwg,
 .dsRqpLP2eKuUJEmFhkMt,
@@ -176,7 +178,7 @@ dialog .encore-light-theme,
 .b_2tITQ1zWWjRCV_c9sW,
 .ArpdzWdgRW_8lwpikPGW,
 .WAc4pJu2EshSMM7cQK9c,
-.e-101040-overflow-wrap-anywhere,
+[class*="overflow-wrap-anywhere"],
 .main-contextMenu-menuItem{
   box-shadow: 0 0px 0px !important;
 }
@@ -204,14 +206,13 @@ dialog .encore-light-theme,
 
 .YQ0uPtmHEvHsS8MszwpG,
 .Paf_Idn_uHcJizNgwOAs,
-.e-10860-button__icon-wrapper,
 .T0rMpAnelW_8YG9TEYXX,
 .VKQ4sdB5MUwV2yKJRQCY,
 .bUVkyYuHPJ19V664vzfA,
 .GGdJC1J_rstFzsYLyQhu,
 .DqIqydL5_xt1AQWeNGNR,
 .fF97jAvlGYYHbI3_vPlV,
-.e-101040-button__icon-wrapper,
+[class*="button__icon-wrapper"],
 .view-homeShortcutsGrid-equaliserImage,
 [aria-label="Equalizer"]{
   filter: saturate(0%) !important;
@@ -224,8 +225,7 @@ dialog .encore-light-theme,
 
 /* As I mentioned earlier, the marketplace header is getting a similar treatment */
 
-.e-10860-legacy-button-primary,
-.e-101040-legacy-button-primary{
+[class*="legacy-button-primary"]{
  --encore-graphic-size-decorative-base: 48px !important;
 }
 
@@ -247,9 +247,7 @@ dialog .encore-light-theme,
 
 /* This one's for the updated create button (with the playlist/folder/jam/mixed playlist/blend options). */
 
-.g6z9DmqJ8tbdUBNlRC4e,
-.e-10860-legacy-button,
-.e-101040-legacy-button{
+[class*="legacy-button"]{
   --text-bright-accent: var(--current-color) !important;
 }
 
@@ -436,6 +434,7 @@ textarea,
   --spice-rgb-text: #2C2C2C !important;
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #DDDDDD !important;
+  --spice-main-elevated: #EEEEEE !important;
 }
 
 :root *{
@@ -447,7 +446,7 @@ svg{
   fill: #121212 !important;
 } 
   
-/* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
+/* This above is the baseline for making everything transparent. */
 
 .main-view-container,
 .main-nowPlayingBar-nowPlayingBar{
@@ -474,8 +473,8 @@ svg{
 dialog,
 dialog .encore-light-theme,
 .ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
-[role="alert"] .e-10860-legacy-box,
-[role="alert"] .e-101040-legacy-box{
+[role="alert"] [class*="legacy-box"],
+.spicetify-popup-container{
   background: #FFFFFF !important;
   border-radius: 8px !important;
   --background-base: #FFFFFF !important;
@@ -534,8 +533,7 @@ svg:hover{
 /* This is to make svg icons fully black when hovered */
 
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
-.e-101040-legacy-list-row__header-side-flex svg,
-.e-10860-legacy-list-row__header-side-flex svg{
+[class*="legacy-list-row__header-side-flex"] svg{
   fill: #FFFFFF !important;
 }
 .marketplace-add-snippet-btn ,
@@ -561,3 +559,4 @@ textarea,
 
 /* This is to fix some fonts and whatnot */
 }
+
