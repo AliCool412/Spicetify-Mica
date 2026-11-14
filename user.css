@@ -28,44 +28,7 @@
 
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
 
-.XigLZTcvt6fiLkosJfYh,
-.miQxkQPT6ObnldFON6FU,
-.e-10860-overflow-wrap-anywhere,
-.zyugqDUpsiWa8v7oczU1,
-.At_PezR11Vm2qa_1CMwg,
-.dsRqpLP2eKuUJEmFhkMt,
-.kIdwlYLsDCgBSpsfutG6,
-.main-card-PlayButtonContainer,
-.mfc6xIi99Ld5z_EtlkLR,
-.main-cardImage-imageWrapper,
-.mdY9Xw839F5sY1aa68Fi,
-.FabGls9zqg_MQCuzhXlB,
-.NeTYdM9FpYcvpF47Z8Y4,
-.rl0QlbVbrvgO0fB5Pkua,
-.Yp3YJJf7sEsbrbtr94Av,
-.fRjoXDS7lH4DqafUORLn,
-.main-entityHeader-shadow,
-.x-entityImage-imageContainer,
-.main-trackList-trackListHeader,
-.rrn0EjHTu7eCxn9G0Rrc,
-.Mx14wT9OS2W16j43a7_g,
-.JhOTA2pevTUzQPJ7GJG0,
-.NMt6sLFwXdQoCRD6zzVJ,
-.gFwQKjIgLpQmNF0YUpUm,
-.m1Mu5Zk_CByqB1Xh6iNC,
-.tbPIAwdW7uiECFyrL7hZ,
-.b_2tITQ1zWWjRCV_c9sW,
-.ArpdzWdgRW_8lwpikPGW,
-.WAc4pJu2EshSMM7cQK9c,
-.e-101040-overflow-wrap-anywhere,
-.main-contextMenu-menuItem{
-  box-shadow: 0 0px 0px !important;
-}
-
-/* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
-
 .main-contextMenu-menu,
-.main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
@@ -185,6 +148,42 @@ dialog .encore-light-theme,
 
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
 
+.XigLZTcvt6fiLkosJfYh,
+.miQxkQPT6ObnldFON6FU,
+.e-10860-overflow-wrap-anywhere,
+.zyugqDUpsiWa8v7oczU1,
+.At_PezR11Vm2qa_1CMwg,
+.dsRqpLP2eKuUJEmFhkMt,
+.kIdwlYLsDCgBSpsfutG6,
+.main-card-PlayButtonContainer,
+.mfc6xIi99Ld5z_EtlkLR,
+.main-cardImage-imageWrapper,
+.mdY9Xw839F5sY1aa68Fi,
+.FabGls9zqg_MQCuzhXlB,
+.NeTYdM9FpYcvpF47Z8Y4,
+.rl0QlbVbrvgO0fB5Pkua,
+.Yp3YJJf7sEsbrbtr94Av,
+.fRjoXDS7lH4DqafUORLn,
+.main-entityHeader-shadow,
+.x-entityImage-imageContainer,
+.main-trackList-trackListHeader,
+.rrn0EjHTu7eCxn9G0Rrc,
+.Mx14wT9OS2W16j43a7_g,
+.JhOTA2pevTUzQPJ7GJG0,
+.NMt6sLFwXdQoCRD6zzVJ,
+.gFwQKjIgLpQmNF0YUpUm,
+.m1Mu5Zk_CByqB1Xh6iNC,
+.tbPIAwdW7uiECFyrL7hZ,
+.b_2tITQ1zWWjRCV_c9sW,
+.ArpdzWdgRW_8lwpikPGW,
+.WAc4pJu2EshSMM7cQK9c,
+.e-101040-overflow-wrap-anywhere,
+.main-contextMenu-menuItem{
+  box-shadow: 0 0px 0px !important;
+}
+
+/* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
+
 .d7rHODV83neFiPSeUqDB:after,
 .TmjKsp7ZdmzlG9vtR_94:after{
   background-image: none !important;
@@ -284,7 +283,8 @@ dialog .encore-light-theme,
 /* This one's for fixing the position of the TopBar of the homepage. */
 
 dialog button,
-[role="dialog"] button{
+[role="dialog"] button,
+.main-contextMenu-menuItem{
   background: transparent !important;
 }
 
@@ -464,7 +464,6 @@ svg{
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
-.main-contextMenu-menuItem,
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
