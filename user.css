@@ -534,7 +534,10 @@ svg:hover{
 
 /* This is to make svg icons fully black when hovered */
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
+.e-101040-legacy-list-row__header-side-flex svg,
+.e-10860-legacy-list-row__header-side-flex svg{
+{
   fill: #FFFFFF !important;
 }
 .marketplace-add-snippet-btn ,
