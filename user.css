@@ -40,7 +40,9 @@
 .ReactModalPortal .encore-light-theme,
 dialog,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
+[role="alert"] .e-10860-legacy-box,
+[role="alert"] .e-101040-legacy-box{
   background: #2B2B2B !important;
   border-radius: 8px !important;
   --background-base: #2B2B2B !important;
@@ -255,13 +257,6 @@ dialog .encore-light-theme,
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-[role="alert"] .e-10860-legacy-box,
-[role="alert"] .e-101040-legacy-box{
-  background: #2B2B2B !important;
-}
-
-/*  And this one's for the background of the aforementioned popups. */
-
 .BTXPtQEzifZvDSNbfM4U:before,
 .BTXPtQEzifZvDSNbfM4U:after,
 .iLPntCcS2p5RQ6lINAgx:after,
@@ -398,7 +393,7 @@ svg:hover{
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"]){
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
   background: #2B2B2B99 !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
@@ -480,7 +475,9 @@ svg{
 .ReactModalPortal .encore-light-theme,
 dialog,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([aria-label="Search"]){
+.ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
+[role="alert"] .e-10860-legacy-box,
+[role="alert"] .e-101040-legacy-box{
   background: #FFFFFF !important;
   border-radius: 8px !important;
   --background-base: #FFFFFF !important;
@@ -501,13 +498,6 @@ dialog .encore-light-theme,
 }
 
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
-
-[role="alert"] .e-10860-legacy-box,
-[role="alert"] .e-101040-legacy-box{
-  background: #FFFFFF !important;
-}
-
-/*  And this one's for the background of the aforementioned popups. */
 
 .SGtaKJxGTMVNxbooL6MS,
 .otkNTxq0HYA5myraxyPM,
@@ -552,7 +542,7 @@ svg:hover{
 .marketplace-header__button {
   background: #FFFFFF !important;
 }
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"]){
+input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
   background: #EEEEEE !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
