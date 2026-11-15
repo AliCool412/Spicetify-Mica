@@ -15,18 +15,25 @@
   --spice-card: #FFFFFF11 !important;
   --spice-tab-active: #DDDDDD11 !important;
   --spice-main-elevated: #FFFFFF11 !important;
-}
-
-:root *{
-  border: none !important;
+  --spice-highlight-elevated: #FFFFFF11 !important;
+  --center-ui-bg: #FFFFFF11 !important;
+  --center-ui-border: none !important;
+  --popout: #2B2B2B !important;
+  --input: #2B2B2B99 !important;
+  --topbar: #202020CC !important;
 }
 
 /* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
 
 .main-view-container,
 .main-nowPlayingBar-nowPlayingBar{
-  background: #ffffff11 !important;
+  background: var(--center-ui-bg) !important;
+  border: var(--center-ui-border) !important;
   border-radius: 8px !important;
+}
+
+:root *:not(.main-view-container, .main-nowPlayingBar-nowPlayingBar, input){
+  border: none !important;
 }
 
 /* This one's for the main view and playback bar being a bit less translucent than the rest */
@@ -35,7 +42,6 @@
 .main-dropDown-dropDownMenu,
 .tippy-box,
 .tippy-content,
-[role="menu"],
 [data-tippy-root],
 #context-menu,
 .main-type-tooltip,
@@ -44,31 +50,25 @@ dialog,
 dialog .encore-light-theme,
 .ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
 [role="alert"] [class*="legacy-box"],
-.spicetify-popup-container{
-  background: #2B2B2B !important;
+.spicetify-popup-container,
+.Dropdown-menu,
+[id="search-dropdown"] > :nth-child(1){
+  background: var(--popout) !important;
   border-radius: 8px !important;
-  --background-base: #2B2B2B !important;
+  --background-base: var(--popout) !important;
   box-shadow: 0 6px 8px #0003 !important;
 }
 
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
 
-.main-trackList-trackListHeader,
-.zyugqDUpsiWa8v7oczU1,
-.rl0QlbVbrvgO0fB5Pkua,
-.rrn0EjHTu7eCxn9G0Rrc{
+[data-scroll-size-invariant-class]:has([aria-label="Change visible columns"]) {
   position: static !important;
   background: transparent !important;
 }
 
 /* This one's for the list sorting options, I can't have them stick to the main topbar when scrolling down since it ruins the look of the theme, the spicetify marketplace sorter gets a similar treatment */
 
-.N8txqqpJDIs_ueBeNFtb,
-.f5PeZZUBAlXJ_yUvOQ63,
-.rzJHb_Q4kE2_d81P1hHQ,
-.Zsz_4IzlyaFvu7jBCd06,
-.MlWLm9_5qALi6Ay0_OCr,
-.dyVzilsz8HZfD1EOJ_0N{
+.before-scroll-node > :nth-child(2) {
  height:104% !important;
  width: 104% !important;
  --background-base: transparent !important;
@@ -91,93 +91,41 @@ dialog .encore-light-theme,
 
 /* And this here is to remove the playback bar play button's circle. */
 
-.SZZaGSgPlvbMy6EmCYPy,
-.IA4iGG9XYovF8ZeEsq8A,
-.b2Yn_b_y4_oqj7M_5AP0,
-.skbiXj4RSA0QAr5xDn9P,
-.cthJwTHIkmtEcnCP_Oov,
-.kmo_ZUsxXMkrPrJGwR5V,
-.main-entityHeader-backgroundColor,
-.main-actionBarBackground-background,
-.main-home-homeHeader,
-.playlist-playlist-actionBarBackground-background,
-.aFTT7HhSi7nKw___DYTw,
-.e1NRR9_lRgRwafa1esSw,
-.dqwQhIudKoD98eWJzj5E,
-.kMUtWcOMOZmCWTMAc_gu,
-.M7ECcaA17LC8UqL2GKVD,
-.main-actionBarBackground-background,
-.kMUtWcOMOZmCWTMAc_gu,
-.kflHPd1wGLg8GjJjmpc6,
-.b0kbWFp7K9_JqU7W7FqI,
-.sxMpFt17cJVTesE9u6fX,
-.QqprhKqwqIsC3c9SIKOE,
-.oCEpJz9qQElJmB4tFybO,
-._ddPhxHdxmpT13IbjTmr,
-.FYt64RVcdU2DfYVJOH4W,
-.V7ICuEr1ZBtemPGKXeZb,
-.OxcpGT2yLq52q4F4aiCr,
-.BFsAktnIfCii8eYPlO6g,
-.main-topBar-overlay,
-.search-searchCategory-carouselButton,
-.zKOK3uU0cYoNyLe3mfT1,
-.ykHt2dbXUBFWx1wiYPbR:after,
-.EJTHIv1RyutH0yibEwgn,
-.uP1rcUSIWCFaOZaoH0ZG,
-.IfBZ5VdI_2nwDMl4H6Yh,
-.kMaYBahSBLOnErF7DLR2,
-.x8V6yaC91n27Micf8MIU,
-.hbNOZbHD3bPL3OcHQWNn,
-.r8bczAWCEgb9_L0iyIcc,
-.GfTKUTxvt__lBLQKmG9m:after,
-.ZQAU4ZFMoSBS3UcYos3k,
-.gDqORSCbwbcSWQcVpGi_,
-.WvvVZFf5X3INPzFLFyXQ{
-  display: none !important;
+[class*="main-entityHeader"],
+[class*="carouselButton"],
+[class*="actionBar"]:not([role*="listbox"] *),
+[data-testid="topbar"] > * > :nth-child(1),
+[aria-label*="Spotify"] > div > *,
+[aria-label*="Spotify"] > div > :nth-child(4),
+[data-shelf="carousel"] *:before,
+[data-shelf="carousel"] *:after,
+[aria-label="Create"]{
+  background: transparent !important;
+  fill: transparent !important;
+  box-shadow: none !important;
 }
 
 /* And this here is a whole list of playlist/homepage/album top gradients to be hidden as it interferes with the theme BADLY, along with the hover button for "expand library" */
 
-.NG0KBybUCTo8_SxXHF3N,
-.iLPntCcS2p5RQ6lINAgx,
-.Ac2raqVCOQ_HYbbCkBAP,
-.main-topBar-background,
-.B_NENXC7AHTEKsYhv3qv{
-  background: #202020CC !important;
+dialog button,
+[role="dialog"] button,
+.main-contextMenu-menuItem{
+  background: transparent !important;
+}
+
+/* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
+
+[data-testid="topbar"] > :nth-child(1) {
+  background: var(--topbar) !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 8px !important;
 }
 
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
 
-.XigLZTcvt6fiLkosJfYh,
-.miQxkQPT6ObnldFON6FU,
-.zyugqDUpsiWa8v7oczU1,
-.At_PezR11Vm2qa_1CMwg,
-.dsRqpLP2eKuUJEmFhkMt,
-.kIdwlYLsDCgBSpsfutG6,
-.main-card-PlayButtonContainer,
-.mfc6xIi99Ld5z_EtlkLR,
-.main-cardImage-imageWrapper,
-.mdY9Xw839F5sY1aa68Fi,
-.FabGls9zqg_MQCuzhXlB,
-.NeTYdM9FpYcvpF47Z8Y4,
-.rl0QlbVbrvgO0fB5Pkua,
-.Yp3YJJf7sEsbrbtr94Av,
-.fRjoXDS7lH4DqafUORLn,
-.main-entityHeader-shadow,
-.x-entityImage-imageContainer,
-.main-trackList-trackListHeader,
-.rrn0EjHTu7eCxn9G0Rrc,
-.Mx14wT9OS2W16j43a7_g,
-.JhOTA2pevTUzQPJ7GJG0,
-.NMt6sLFwXdQoCRD6zzVJ,
-.gFwQKjIgLpQmNF0YUpUm,
-.m1Mu5Zk_CByqB1Xh6iNC,
-.tbPIAwdW7uiECFyrL7hZ,
-.b_2tITQ1zWWjRCV_c9sW,
-.ArpdzWdgRW_8lwpikPGW,
-.WAc4pJu2EshSMM7cQK9c,
+*:has(img),
+[class*="shadow"],
+[class*="imageContainer"] > *,
 [class*="overflow-wrap-anywhere"],
 .main-contextMenu-menuItem{
   box-shadow: 0 0px 0px !important;
@@ -185,35 +133,9 @@ dialog .encore-light-theme,
 
 /* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
 
-.d7rHODV83neFiPSeUqDB:after,
-.TmjKsp7ZdmzlG9vtR_94:after{
-  background-image: none !important;
-}
-
-/* This one's also for artist pages if I'm not wrong. */
-
-.zyugqDUpsiWa8v7oczU1,
-.CpEaNOB66nFcZNUZA2wg,
-.rl0QlbVbrvgO0fB5Pkua,
-.main-trackList-trackListHeader,
-.wa2PCV98IHUuN_LjuUV8,
-.rrn0EjHTu7eCxn9G0Rrc{
-  border-top: none !important;
-  border-bottom: none !important;
-}
-
-/* And this is also for the playlist sorting options, they have a weird border which, I don't even know why it was added in the first place. */
-
-.YQ0uPtmHEvHsS8MszwpG,
-.Paf_Idn_uHcJizNgwOAs,
-.T0rMpAnelW_8YG9TEYXX,
-.VKQ4sdB5MUwV2yKJRQCY,
-.bUVkyYuHPJ19V664vzfA,
-.GGdJC1J_rstFzsYLyQhu,
-.DqIqydL5_xt1AQWeNGNR,
-.fF97jAvlGYYHbI3_vPlV,
+[src*="equaliser-animated-green.gif"],
 [class*="button__icon-wrapper"],
-.view-homeShortcutsGrid-equaliserImage,
+[class*="equaliser"],
 [aria-label="Equalizer"]{
   filter: saturate(0%) !important;
 }
@@ -237,112 +159,45 @@ dialog .encore-light-theme,
 
 /* This here is a fix for icons inside menus looking a bit off in scaling under 100%. */
 
-.uCpbyRyKRYhEnUmXhDjT,
-.mWDxoEl19Pld4at5Bbho,
-.z5xXvo0plHA8HMaC0sJp,
-.webE_oBiKCems7iUXKoY{
-  --spice-highlight-elevated: transparent !important;
-  background: transparent !important;
-}
-
-/* This one's for the updated create button (with the playlist/folder/jam/mixed playlist/blend options). */
-
 [class*="legacy-button"]{
   --text-bright-accent: var(--current-color) !important;
 }
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-.BTXPtQEzifZvDSNbfM4U:before,
-.BTXPtQEzifZvDSNbfM4U:after,
-.iLPntCcS2p5RQ6lINAgx:after,
-.x4nQPvl5jCXXKJ2sJ9Hk:before,
-.x4nQPvl5jCXXKJ2sJ9Hk:after,
-.YOYIfKkABUDGQ5vQmg7y:after,
-.oCSWtOAH_CgjIsi_H_PS,
-.search-searchCategory-contentArea:before,
-.search-searchCategory-contentArea:after,
-.tPfod6L1Bt5VzxPtQjsx:before,
-.tPfod6L1Bt5VzxPtQjsx:after{
-  background: transparent !important;
+[aria-label*="Spotify"] > div > :nth-child(4){
+  display: none !important;
 }
-
-/* This one's for removing drop shadows from sideways scroll elements. */
-
-.ap_ioWdVFWJkrRicJB8C,
-.iLPntCcS2p5RQ6lINAgx,
-.YOYIfKkABUDGQ5vQmg7y,
-.g8bL3bGxc63nO5u9gY7g,
-.jTuahgNncRCCfJfiJwQi,
-.main-home-filterChipsContainer{
-  position: static !important;
-}
-
-/* This one's for fixing the position of the TopBar of the homepage. */
-
-dialog button,
-[role="dialog"] button,
-.main-contextMenu-menuItem{
-  background: transparent !important;
-}
-
-/* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
-  
-._qEwikUlZSIdhG1eHl6y,
-._J9UwvtamqPEj5yboIAr,
-.main-nowPlayingView-headerContainer,
-.tlJt8JO80alw0Nlw6iW9,
-.gZpXLJXyMzANBMLPwHdh,
-.WU7dTdoNA51czqGivj8T,
-.Zh3rQRncNEHrT9Zvp61n,
-.main-nowPlayingView-headerContainerV2{
+/* This one's for hiding TopBar of the homepage since I genuinely can't fix it. */
+ 
+ [data-npv-root="true"] > :nth-child(1),
+[aria-label="Queue"] > :nth-child(1) > :nth-child(1){
   position: static !important;
   box-shadow: 0 0px 0px !important;
 }
 
 /* And this one's for the now playing bar title and the queue title. */
 
-.HuKs8FZg6Y75cV9Lh0Kk,
-.AfKmrZ306qeQTbYQfwLc,
-.caAOfYXiCAm8Vhi8McGl,
-.main-nowPlayingView-nowPlayingWidget{
+[data-npv-root="true"] > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1){
   margin-top: 0px !important;
 }
 /* And this one's for the margin on top of the now playing bar's album cover art. */
 
-.SGtaKJxGTMVNxbooL6MS,
-.otkNTxq0HYA5myraxyPM,
-.ZLLC2GclD3PmvhLb2nKg,
-.vBApP4_Oa8AOZwx2NEvV{
-  background: #FFFFFF11 !important;
-  width: 100.6% !important;
-}
-
-/* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
-
-.WDGCR4wjBcw7jSoDr1ei,
-.yqQQ3a6EliT3QqxuMFUq,
-.Gs2EwEu259e_Q_vcVyCx,
-.x9WJE0JUEXgHK_YmZoO1{
+.Root__top-container > :nth-child(7){
   outline: none !important;
   border-radius: 8px !important;
 }
 
 /* This is for the outline of the lyrics page. */
 
-.XsSWx3aR_OYA3GMIEk7S:before,
-.bTl2te1IUWrzwYZ0DTpc:before,
-.yPshcpMuntyejAV1GqNF:before,
-.mfJiX8d9Ng2rmd1PJqLZ:before{
+.Root__top-container > :nth-child(7) > :nth-child(1):before {
   background: none !important;
 }
 
 /* This one's for the drop shadow in the lyrics page. */
 
 .Dropdown-menu{
-  background: #2B2B2B !important;
   max-height: max-content !important;
-  box-shadow: 0 6px 8px #0003 !important;
 }
 
 .Dropdown-option:hover{
@@ -355,16 +210,14 @@ dialog button,
 
 /* Those are all for dropdown menus. */
 
-svg:hover{
+svg:hover,
+[class*="legacy-list-row__header-side-flex"] svg{
   fill: #ffffff !important;
 }
 
 /* This is to make svg icons fully white when hovered */
 
-.vmkoQ3oMgW4BfU_WfoFk,
-.xYEVHUdpjHxilQRQuYPQ,
-.ps0EG24hmbstiZo9P7fu,
-.Root__right-sidebar-deferredCollapsed{
+#main-view + div > div:nth-child(1):has([aria-hidden="true"][inert]) {
   display: none !important;
 }
 
@@ -386,33 +239,46 @@ svg:hover{
 .marketplace-card-desc{
   font-family: var(--encore-body-font-stack) !important;
 }
-.marketplace-add-snippet-btn ,
+.marketplace-add-snippet-btn,
 .marketplace-header__button {
   color: #000000 !important;
+  box-shadow: 0 6px 8px #0003 !important;
+  background: #FFFFFF !important;
 }
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
 input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
-  background: #2B2B2B99 !important;
+  background: var(--input) !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
+  border: var(--center-ui-border) !important;
 }
 textarea,
 .marketplace-code-editor{
-  background: #2B2B2B99 !important;
+  background: var(--input) !important;
   border-radius: 16px !important;
 }
 
 /* This is to fix some fonts and whatnot */
 
-.Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) .main-view-container,
-.Root__top-container:has(.SGtaKJxGTMVNxbooL6MS, .otkNTxq0HYA5myraxyPM, .ZLLC2GclD3PmvhLb2nKg, .vBApP4_Oa8AOZwx2NEvV) [data-testid="topbar"] {
+#main-view[inert] > * {
   display: none !important;
 }
+
+#Desktop_LeftSidebar_Id:has(~ #main-view[inert]) {
+  background: var(--center-ui-bg) !important;
+  border: var(--center-ui-border) !important;
+  border-radius: 8px !important;
+  width: 100.6% !important;
+}
+
 /* This is to make sure the main view becomes transparent when library expanded */
 
-/* This below has the overrides for light mode */
+.main-yourLibraryX-collapseButton > * > [aria-label*="Open"]:hover > :nth-child(1) > svg {
+  fill: transparent !important;
+}
+/* This is to fix the hovering of the "expand library" button */
 
 @media (prefers-color-scheme: light) {
 :root {
@@ -436,128 +302,43 @@ textarea,
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #DDDDDD !important;
   --spice-main-elevated: #EEEEEE !important;
+  --background-highlight: #AAAAAA99 !important;
+  --spice-highlight-elevated: #AAAAAA99 !important;
+  --center-ui-bg: transparent !important;
+  --center-ui-border: 1px solid #00000022 !important;
+  --popout: #EEEEEE !important;
+  --input: #DDDDDD99 !important;
+  --topbar: #FFFFFFCC !important;
+
 }
 
 :root *{
-  border: none  !important;
   -webkit-text-fill-color: #000000 !important;
 }
-
-svg{
-  fill: #121212 !important;
-} 
-  
-/* This above is the baseline for making everything transparent. */
-
-.main-view-container,
-.main-nowPlayingBar-nowPlayingBar{
-  background: #eeeeee !important;
-  border-radius: 8px !important;
-  border: 1px solid #00000022 !important;
-}
-
-[aria-label="Search"] > * > * > *{
-  background-color: #FFFFFF !important;
-}
-
-/* This one's for the main view and playback bar being a bit less translucent than the rest */
-
-.main-contextMenu-menu,
-.main-dropDown-dropDownMenu,
-.tippy-box,
-.tippy-content,
-[role="menu"],
-[data-tippy-root],
-#context-menu,
-.main-type-tooltip,
-.ReactModalPortal .encore-light-theme,
-dialog,
-dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([aria-label="Search"]),
-[role="alert"] [class*="legacy-box"],
-.spicetify-popup-container{
-  background: #FFFFFF !important;
-  border-radius: 8px !important;
-  --background-base: #FFFFFF !important;
-  box-shadow: 0 6px 8px #0003 !important;
-}
-
-/* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
-
-.NG0KBybUCTo8_SxXHF3N,
-.iLPntCcS2p5RQ6lINAgx,
-.Ac2raqVCOQ_HYbbCkBAP,
-.main-topBar-background,
-.B_NENXC7AHTEKsYhv3qv{
-  background: #FFFFFFCC !important;
-  backdrop-filter: blur(10px) !important;
-  border-radius: 8px !important;
-  border: 1px solid #00000022 !important;
-}
-
-/* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
-
-.SGtaKJxGTMVNxbooL6MS,
-.otkNTxq0HYA5myraxyPM,
-.ZLLC2GclD3PmvhLb2nKg,
-.vBApP4_Oa8AOZwx2NEvV{
-  background: #EEEEEE !important;
-  width: 100.6% !important;
-  border: 1px solid #00000022 !important;
-}
-
-/* This one's for the expanded "Your Library" section, DO NOT use the class name of the unexpanded state. */
-
-.Dropdown-menu{
-  background: #FFFFFF !important;
-  max-height: max-content !important;
-  box-shadow: 0 6px 8px #0003 !important;
-}
-.Dropdown-control:hover{
-  background: #DDDDDD !important;
-}
-
-.Dropdown-option:hover{
-  background: #34343422 !important;
-}
-
-.Dropdown-option.is-selected{
-  background: #44444422 !important;
-}
-
-/* Those are all for dropdown menus. */
 
 svg:hover{
   fill: #000000 !important;
 }
 
-/* This is to make svg icons fully black when hovered */
+svg{
+  fill: #111111 !important;
+}
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *,
-[class*="legacy-list-row__header-side-flex"] svg{
+.Dropdown-option:hover{
+  background: #AAAAAA99 !important;
+}
+
+.Dropdown-option.is-selected{
+  background: #DDDDDD !important;
+}
+
+.Dropdown-control:hover{
+  color: #DDDDDD11 !important;
+}
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
   fill: #FFFFFF !important;
 }
-.marketplace-add-snippet-btn ,
-.marketplace-header__button {
-  background: #FFFFFF !important;
-  box-shadow: 0 6px 8px #0003 !important;
-}
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
-  background: #EEEEEE !important;
-  backdrop-filter: blur(10px) !important;
-  border-radius: 32px !important;
-  border: 1px solid #00000022 !important;
-}
-textarea,
-.marketplace-code-editor{
-  background: #EEEEEE !important;
-  border-radius: 16px !important;
-  border: 1px solid #00000022 !important;
-}
-[role="listbox"] > *{
-  background: #EEEEEE !important;
-}
 
-/* This is to fix some fonts and whatnot */
-}
+/* This above has the overrides for light mode */
 
+}
