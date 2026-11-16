@@ -5,11 +5,11 @@
   --background-noise: #00000099 !important;
   --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
-  --encore-icon-fill: var(--spice-text) !important;
-  --text-bright-accent: var(--spice-text) !important;
+  --encore-icon-fill: var(--current-color) !important;
+  --text-bright-accent: var(--current-color) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
-  --spice-button-active: none !important;
+  --spice-button-active: var(--current-color) !important;
   --background-highlight: #FFFFFF11 !important;
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
