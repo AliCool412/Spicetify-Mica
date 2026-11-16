@@ -133,7 +133,7 @@ dialog button,
 
 /* This is to remove the drop shadow from images, whether it's the playlists, albums or even the left sidebar, and the shadow of the left sidebar. */
 
-[src*="equaliser-animated-green.gif"],
+[src*="equaliser"],
 [class*="button__icon-wrapper"],
 [class*="equaliser"],
 [aria-label="Equalizer"]{
