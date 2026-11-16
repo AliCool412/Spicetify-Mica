@@ -48,7 +48,7 @@
 .ReactModalPortal .encore-light-theme,
 dialog,
 dialog .encore-light-theme,
-.ReactModalPortal [role="dialog"]:not([class*="overlay"]),
+.ReactModalPortal [role="dialog"]:not([class*="overlay"] *),
 [role="alert"] [class*="legacy-box"],
 .spicetify-popup-container,
 .Dropdown-menu,
@@ -61,7 +61,7 @@ dialog .encore-light-theme,
 
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
 
-[data-scroll-size-invariant-class]:has([aria-label="Change visible columns"]) {
+[data-scroll-size-invariant-class] {
   position: static !important;
   background: transparent !important;
 }
@@ -99,7 +99,7 @@ dialog .encore-light-theme,
 [id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4),
 [data-shelf="carousel"] *:before,
 [data-shelf="carousel"] *:after,
-[aria-label="Create"]{
+[id="Desktop_LeftSidebar_Id"] button{
   background: transparent !important;
   fill: transparent !important;
   box-shadow: none !important;
@@ -124,6 +124,7 @@ dialog button,
 /* This one's for the page title which we'll call Main TopBar for lack of a better name (when you scroll down the visible list and it has a play button on the left of the name and such except the name isn't as enlarged in this little rectangle). */
 
 *:has(img),
+*:has(svg),
 [class*="shadow"],
 [class*="imageContainer"] > *,
 [class*="overflow-wrap-anywhere"],
@@ -136,7 +137,7 @@ dialog button,
 [src*="equaliser"],
 [class*="button__icon-wrapper"],
 [class*="equaliser"],
-[aria-label="Equalizer"]{
+*:has(> canvas){
   filter: saturate(0%) !important;
 }
 /* This one's to make the playing GIF and equalizer become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
@@ -172,10 +173,10 @@ dialog button,
   background: transparent !important;
   --background-base: transparent !important;
 }
-/* This one's for hiding TopBar of the homepage since I genuinely can't fix it. */
+/* This one's for the TopBar of the homepage. */
  
- [data-npv-root="true"] > :nth-child(1),
-[aria-label="Queue"] > :nth-child(1) > :nth-child(1){
+[data-npv-root="true"] > :nth-child(1),
+*:has(> :nth-child(1) > [data-encore-id="tabs"]){
   position: static !important;
   box-shadow: 0 0px 0px !important;
 }
@@ -234,7 +235,7 @@ svg:hover,
 
 /* This is to even out the width of main view after the removal of Peek NPV */
 
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
   fill: #000000 !important;
 }
 .marketplace-add-snippet-btn,
@@ -252,7 +253,7 @@ svg:hover,
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
-input:not([aria-label="Search"] input, [aria-label^="Change decibels"], .SpicyLyricsModal input){
+input:not([data-testid*="search-modal-input"], *:has(> canvas) *, .SpicyLyricsModal input){
   background: var(--input) !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
@@ -279,7 +280,7 @@ textarea,
 
 /* This is to make sure the main view becomes transparent when library expanded */
 
-.main-yourLibraryX-collapseButton > * > [aria-label*="Open"]:hover > :nth-child(1) > svg {
+.main-yourLibraryX-collapseButton button:hover svg:not([class*="auto-mirror"]) {
   fill: transparent !important;
 }
 /* This is to fix the hovering of the "expand library" button */
@@ -339,7 +340,7 @@ svg{
 .Dropdown-control:hover{
   color: #DDDDDD11 !important;
 }
-.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([aria-label="Marketplace Settings"] > *) > *{
+.marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id*="marketplace-settings-button"] > *) > *{
   fill: #FFFFFF !important;
 }
 
