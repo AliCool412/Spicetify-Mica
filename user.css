@@ -9,7 +9,7 @@
   --text-bright-accent: var(--current-color) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
-  --spice-button-active: --center-ui-bg !important;
+  --spice-button-active: var(--center-ui-bg) !important;
   --background-highlight: #FFFFFF11 !important;
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
