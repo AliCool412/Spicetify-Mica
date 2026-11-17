@@ -122,7 +122,7 @@ dialog .encore-light-theme,
 [src*="equaliser"],
 [class*="button__icon-wrapper"],
 [class*="equaliser"],
-*:has(> canvas){
+[data-testid="settings-page"] canvas{
   filter: saturate(0%) !important;
 }
 /* This one's to make the playing GIF and equalizer become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
