@@ -1,4 +1,5 @@
-:root {
+/* Spicetify Mica by AliCool412 */
+:root{
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
   --spice-main: none !important;
@@ -9,7 +10,6 @@
   --text-bright-accent: var(--current-color) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
-  --spice-button-active: var(--center-ui-bg) !important;
   --background-highlight: #FFFFFF11 !important;
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
@@ -32,11 +32,11 @@
   border-radius: 8px !important;
 }
 
-:root *:not(.main-view-container, .main-nowPlayingBar-nowPlayingBar, input){
+:root *:not(.main-view-container, .main-nowPlayingBar-nowPlayingBar, input, input + *){
   border: none !important;
 }
 
-/* This one's for the main view and playback bar being a bit less translucent than the rest */
+/* This is for the main view and playback bar being a bit less translucent than the rest */
 
 .main-contextMenu-menu,
 .main-dropDown-dropDownMenu,
@@ -48,11 +48,12 @@
 .ReactModalPortal .encore-light-theme,
 dialog,
 dialog .encore-light-theme,
+[role="dialog"],
 .ReactModalPortal [role="dialog"]:not([class*="overlay"] *),
 [role="alert"] [class*="legacy-box"],
 .spicetify-popup-container,
 .Dropdown-menu,
-[id="search-dropdown"] > :nth-child(1){
+[id="search-dropdown"] > :nth-child(1) {
   background: var(--popout) !important;
   border-radius: 8px !important;
   --background-base: var(--popout) !important;
@@ -61,32 +62,25 @@ dialog .encore-light-theme,
 
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
 
-[data-scroll-size-invariant-class] {
+[data-scroll-size-invariant-class],
+[data-testid="home-ads-container"] + * + *,
+[data-testid="home-ads-container"] + * + * *:after{
   position: static !important;
   background: transparent !important;
 }
 
-/* This one's for the list sorting options, I can't have them stick to the main topbar when scrolling down since it ruins the look of the theme, the spicetify marketplace sorter gets a similar treatment */
+/* This one's for the list sorting options, and the homepage topbar, I can't have them stick to the main topbar when scrolling down since it ruins the look of the theme, the spicetify marketplace sorter gets a similar treatment */
 
-.before-scroll-node > :nth-child(2) {
+.before-scroll-node > *:has([data-testid="background-image"]) {
  height:104% !important;
  width: 104% !important;
- --background-base: transparent !important;
- --background-press: transparent !important;
- --background-elevated-base: transparent !important;
- --background-tinted-base: transparent !important;
+    background: transparent !important;
 }
 
 /* This is for artists' pages banners being used as the full page's background, as there is no way to implement a dynamically changing backdrop with the banner picture of artists other than to make the entire background be the artist's banner, if you have a better implementation, please enlighten me, or do it yourself, this isn't sarcastic or demeaning btw I'm being so fr here. */
 
-[class*="overflow-wrap-anywhere"]{
-  --background-highlight: transparent !important;
-  --background-press: transparent !important;
-  --spice-button-active: transparent !important;
-  --background-elevated-base: transparent !important;
-  --background-elevated-highlight: transparent !important;
-  --background-elevated-press: transparent !important;
-  --background-base: transparent !important;
+[class*="overflow-wrap-anywhere"]:has(svg){
+  background: transparent !important;
 }
 
 /* And this here is to remove the playback bar play button's circle. */
@@ -95,25 +89,16 @@ dialog .encore-light-theme,
 [class*="carouselButton"],
 [class*="actionBar"]:not([role*="listbox"] *),
 [data-testid="topbar"] > * > :nth-child(1),
-[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > *,
-[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4),
 [data-shelf="carousel"] *:before,
 [data-shelf="carousel"] *:after,
-[id="Desktop_LeftSidebar_Id"] button{
+[id="Desktop_LeftSidebar_Id"] button,
+*:has(+ [data-testid="home-ads-container"]){
   background: transparent !important;
   fill: transparent !important;
   box-shadow: none !important;
 }
 
 /* And this here is a whole list of playlist/homepage/album top gradients to be hidden as it interferes with the theme BADLY, along with the hover button for "expand library" */
-
-dialog button,
-[role="dialog"] button,
-.main-contextMenu-menuItem{
-  background: transparent !important;
-}
-
-/* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
 
 [data-testid="topbar"] > :nth-child(1) {
   background: var(--topbar) !important;
@@ -148,9 +133,8 @@ dialog button,
 
 /* As I mentioned earlier, the marketplace header is getting a similar treatment */
 
-[data-testid*="action-bar"],
-[data-testid*="topbar"]{
- --encore-graphic-size-decorative-base: 36px !important;
+[class*="legacy-button-primary"]{
+ --encore-graphic-size-decorative-base: 48px !important;
 }
 
 /* This one's for the now ENLARGED playlist play button triangle. */
@@ -167,25 +151,26 @@ dialog button,
 
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
-[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4) > *,
-[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4),
-[id*="main-view"] > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > div > :nth-child(4) > *:after{
+dialog button,
+[role="dialog"] button,
+.main-contextMenu-menuItem{
   background: transparent !important;
-  --background-base: transparent !important;
 }
-/* This one's for the TopBar of the homepage. */
- 
-[data-npv-root="true"] > :nth-child(1),
-*:has(> :nth-child(1) > [data-encore-id="tabs"]){
+
+/* And this one's to make buttons' backgrounds transparent in dialog boxes (they look neater that way). */
+
+[data-npv-root="true"] > *,
+*:has(> * > [data-encore-id="tabs"]){
   position: static !important;
   box-shadow: 0 0px 0px !important;
 }
 
 /* And this one's for the now playing bar title and the queue title. */
 
-[data-npv-root="true"] > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1){
+[data-npv-root="true"] *:has(img){
   margin-top: 0px !important;
 }
+
 /* And this one's for the margin on top of the now playing bar's album cover art. */
 
 .Root__top-container > :nth-child(7){
@@ -216,7 +201,7 @@ dialog button,
 /* Those are all for dropdown menus. */
 
 svg:hover,
-[class*="legacy-list-row__header-side-flex"] svg{
+[id="onClickHintspotify:collection:local-files"] + * svg{
   fill: #ffffff !important;
 }
 
@@ -238,27 +223,32 @@ svg:hover,
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id="marketplace-settings-button"] > *) > *{
   fill: #000000 !important;
 }
+
 .marketplace-add-snippet-btn,
 .marketplace-grid,
 .spicetify-popup button,
 .marketplace-card-desc{
   font-family: var(--encore-body-font-stack) !important;
 }
+
 .marketplace-add-snippet-btn,
 .marketplace-header__button {
   color: #000000 !important;
   box-shadow: 0 6px 8px #0003 !important;
   background: #FFFFFF !important;
 }
+
 [data-testid="now-playing-bar"] {
   --background-elevated-base: none !important;
 }
+
 input:not([data-testid*="search-modal-input"], *:has(> canvas) *, .SpicyLyricsModal input){
   background: var(--input) !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 32px !important;
   border: var(--center-ui-border) !important;
 }
+
 textarea,
 .marketplace-code-editor{
   background: var(--input) !important;
@@ -267,11 +257,11 @@ textarea,
 
 /* This is to fix some fonts and whatnot */
 
-#main-view[inert] > * {
+[id="main-view"][inert] > * {
   display: none !important;
 }
 
-#Desktop_LeftSidebar_Id:has(~ #main-view[inert]) {
+[id="Desktop_LeftSidebar_Id"]:has(~ [id="main-view"][inert]) {
   background: var(--center-ui-bg) !important;
   border: var(--center-ui-border) !important;
   border-radius: 8px !important;
@@ -285,30 +275,44 @@ textarea,
 }
 /* This is to fix the hovering of the "expand library" button */
 
+label:has(input[type="checkbox"]) > input:checked + * > :nth-child(1){
+  background: #000000 !important;
+}
+label:has(input[type="checkbox"]) > input:checked + *:hover{
+  background: #CCCCCC !important;
+}
+label:has(input[type="checkbox"]) > input:checked + *{
+  background: #FFFFFF !important;
+}
+input[type="checkbox"] + *:hover{
+  background:#666666 !important;
+}
+input[type="checkbox"] + *{
+  background: #AAAAAA99 !important;
+}
+
+/* This is for toggles */
+
+[style*="--background-base"]{
+  --background-base: transparent !important;
+}
+
+/* This is to remove gradients */
+
 @media (prefers-color-scheme: light) {
 :root {
-  --spice-main-transition: none !important;
-  --spice-sidebar: none !important;
-  --spice-main: none !important;
   --background-noise: #FFFFFF99 !important;
-  --spice-button: var(--spice-subtext) !important;
-  --encore-overlay-box-shadow: 0 0px 0px !important;
-  --encore-icon-fill: var(--current-color) !important;
-  --text-bright-accent: var(--current-color) !important;
-  --carousel-start-chevron-gradient: none !important;
-  --essential-bright-accent: var(--spice-text) !important;
-  --spice-button-active: var(--center-ui-bg) !important;
-  --spice-text: #121212 !important;
-  --spice-subtext: #535353 !important;
+  --spice-text: #000000 !important;
+  --spice-subtext: #000000 !important;
   --text-base: #121212 !important;
-  --text-subdued: #535353 !important;
+  --text-subdued: #000000 !important;
   --spice-card: #DDDDDD !important;
-  --spice-rgb-text: #2C2C2C !important;
+  --spice-rgb-text: #000000 !important;
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #DDDDDD !important;
-  --spice-main-elevated: #EEEEEE !important;
-  --background-highlight: #AAAAAA99 !important;
-  --spice-highlight-elevated: #AAAAAA99 !important;
+  --spice-main-elevated: #DDDDDD !important;
+  --background-highlight: #00000022 !important;
+  --spice-highlight-elevated: #00000022 !important;
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
@@ -337,9 +341,11 @@ svg{
   background: #DDDDDD !important;
 }
 
-.Dropdown-control:hover{
-  color: #DDDDDD11 !important;
+.Dropdown-control:hover,
+.main-contextMenu-menuItem button:hover{
+  background: #CCCCCC !important;
 }
+
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id*="marketplace-settings-button"] > *) > *{
   fill: #FFFFFF !important;
 }
