@@ -263,7 +263,7 @@ textarea,
 }
 
 [class*="legacy-chip__inner--selected"]{
-  color: #000000!important;
+  color: #000000 !important;
 }
 
 /* This is to fix some fonts and whatnot */
