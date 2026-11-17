@@ -262,6 +262,10 @@ textarea,
   background: transparent !important;
 }
 
+[class*="legacy-chip__inner--selected"]{
+  color: #000000!important;
+}
+
 /* This is to fix some fonts and whatnot */
 
 [id="main-view"][inert] > * {
