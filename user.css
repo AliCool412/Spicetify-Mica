@@ -257,6 +257,11 @@ textarea,
   border-radius: 16px !important;
 }
 
+[role="radiogroup"] > *,
+[role="radiogroup"] > * > *{
+  background: transparent !important;
+}
+
 /* This is to fix some fonts and whatnot */
 
 [id="main-view"][inert] > * {
