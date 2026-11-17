@@ -1,6 +1,6 @@
 /* Spicetify Mica by AliCool412 */
 :root{
-  --currentcolor: var(--spice-text) !important;
+  --currentcolor: var(--spice-subtext) !important;
   --spice-button-active: var(--spice-text) !important;
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
