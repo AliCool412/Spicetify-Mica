@@ -10,7 +10,7 @@ Best used with [CEF/Spotify Tweaks](https://windhawk.net/mods/cef-titlebar-enabl
 
 Special Thanks to [Ingan121](https://github.com/Ingan121) for helping make this theme work as intended through javascript, and creating the windhawk mod mentioned above.
 
-Works as intended on versions 1.2.96 through 1.3.10
+Works as intended on versions 1.2.88 through 1.3.10
 
 ### Required CEF/Spotify Tweaks
 
