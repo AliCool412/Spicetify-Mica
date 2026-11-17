@@ -153,7 +153,7 @@ dialog button,
  --encore-graphic-size-decorative-base: 36px !important;
 }
 
-/* This one's for the now VERY LARGE playlist play button triangle. */
+/* This one's for the now ENLARGED playlist play button triangle. */
 
 #context-menu svg{
   overflow: visible !important;
