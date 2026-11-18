@@ -157,6 +157,7 @@ dialog .encore-light-theme,
 /* This one's for the "Change" link inside of the popups that say "added to [playlist name]". */
 
 dialog button,
+dialog button *,
 [role="dialog"] button,
 [role="dialog"] button *,
 .main-contextMenu-menuItem{
