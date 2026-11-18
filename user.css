@@ -361,6 +361,10 @@ svg{
   fill: #FFFFFF !important;
 }
 
+[class*="legacy-chip__inner--selected"]{
+  color: #FFFFFF !important;
+}
+
 /* This above has the overrides for light mode */
 
 }
