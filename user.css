@@ -66,6 +66,16 @@ dialog .encore-light-theme,
   box-shadow: 0 6px 8px #0003 !important;
 }
 
+select {
+  color-scheme: dark;
+}
+
+select option,
+select optgroup {
+  background-color: var(--popout) !important;
+  color: #FFFFFF !important;
+}
+
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
 
 [data-scroll-size-invariant-class],
@@ -378,6 +388,16 @@ svg{
 
 [data-testid="progress-bar-background"]{
   background-color: #999999 !important;
+}
+
+select {
+  color-scheme: light;
+}
+
+select option,
+select optgroup {
+  background-color: var(--popout) !important;
+  color: #000000 !important;
 }
 
 /* This above has the overrides for light mode */
