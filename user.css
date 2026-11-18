@@ -363,6 +363,7 @@ svg{
 
 [class*="legacy-chip__inner--selected"]{
   color: #FFFFFF !important;
+  -webkit-text-fill-color: #999999 !important;
 }
 
 /* This above has the overrides for light mode */
