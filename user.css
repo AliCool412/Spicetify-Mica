@@ -1,5 +1,8 @@
 /* Spicetify Mica by AliCool412 */
-:root {
+:root,
+body,
+[class*="encore-"],
+[class*="encore-"] * {
   --currentcolor: var(--spice-subtext) !important;
   --spice-button-active: var(--spice-text) !important;
   --spice-main-transition: none !important;
@@ -312,7 +315,10 @@ input[type="checkbox"] + *{
 /* This is to remove gradients */
 
 @media (prefers-color-scheme: light) {
-:root {
+:root,
+body,
+[class*="encore-"],
+[class*="encore-"] * {
   --background-noise: #FFFFFF99 !important;
   --spice-text: #000000 !important;
   --spice-subtext: #000000 !important;
