@@ -309,7 +309,7 @@ label:has(input[type="checkbox"]) > input:checked + *:hover{
   background: #CCCCCC !important;
 }
 label:has(input[type="checkbox"]) > input:checked + *{
-  background: #FFFFFF !important;
+  background: #BBBBBB !important;
 }
 input[type="checkbox"] + *:hover{
   background:#666666 !important;
