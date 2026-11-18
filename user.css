@@ -365,6 +365,7 @@ svg{
   color: #FFFFFF !important;
   -webkit-text-fill-color: #999999 !important;
 }
+
 [data-testid="progress-bar-background"]{
   background-color: #999999 !important;
 }
