@@ -80,7 +80,8 @@ select optgroup {
 
 [data-scroll-size-invariant-class],
 [data-testid="home-ads-container"] + * + *,
-[data-testid="home-ads-container"] + * + * *:after{
+[data-testid="home-ads-container"] + * + * *:after,
+[role="grid"] > *:has([data-skip-in-keyboard-nav="true"]){
   position: static !important;
   background: transparent !important;
 }
