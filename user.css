@@ -22,7 +22,7 @@ body,
   --center-ui-bg: #FFFFFF11 !important;
   --center-ui-border: none !important;
   --popout: #2B2B2B !important;
-  --input: #2B2B2B !important;
+  --input: #2B2B2B99 !important;
   --topbar: #202020CC !important;
   --spice-highlight-elevated: #FFFFFF11 !important;
 }
@@ -346,7 +346,7 @@ body,
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
-  --input: #DDDDDD !important;
+  --input: #FFFFFF !important;
   --topbar: #FFFFFFCC !important;
   --spice-highlight-elevated: #CCCCCC !important;
 
