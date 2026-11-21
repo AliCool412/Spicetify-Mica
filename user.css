@@ -101,7 +101,7 @@ select optgroup {
   background: transparent !important;
 }
 
-/* And this here is to remove the playback bar play button's circle. */
+/* And this here is to remove the playback bar play button's circle background. */
 
 [class*="main-entityHeader"],
 [class*="carouselButton"],
