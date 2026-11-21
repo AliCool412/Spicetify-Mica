@@ -59,6 +59,7 @@ dialog .encore-light-theme,
 [role="alert"] > :nth-child(1),
 .spicetify-popup-container,
 .Dropdown-menu,
+[data-encore-id="popover"],
 [id="search-dropdown"] > :nth-child(1) {
   background: var(--popout) !important;
   border-radius: 8px !important;
