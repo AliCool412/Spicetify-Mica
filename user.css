@@ -373,7 +373,7 @@ svg{
 .Dropdown-control:hover,
 .main-contextMenu-menuItem:hover,
 [data-encore-id="popover"] > * > *:hover{
-  background: #CCCCCC !important;
+  background: #DDDDDD !important;
 }
 
 .marketplace-content [xmlns="http://www.w3.org/2000/svg"]:not([id*="marketplace-settings-button"] > *) > *{
