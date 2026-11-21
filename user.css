@@ -256,8 +256,8 @@ svg:hover,
   background: #FFFFFF !important;
 }
 
-[data-testid="now-playing-bar"] {
-  --background-elevated-base: none !important;
+[data-testid="now-playing-bar"] > :nth-child(2) {
+  background: transparent !important;
 }
 
 input:not([data-testid*="search-modal-input"], *:has(> canvas) *, .SpicyLyricsModal input){
