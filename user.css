@@ -56,7 +56,7 @@ dialog,
 dialog .encore-light-theme,
 [role="dialog"],
 .ReactModalPortal [role="dialog"]:not([class*="overlay"] *),
-[role="alert"] [class*="legacy-box"],
+[role="alert"] :nth-child(1),
 .spicetify-popup-container,
 .Dropdown-menu,
 [id="search-dropdown"] > :nth-child(1) {
