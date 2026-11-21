@@ -154,7 +154,7 @@ select optgroup {
 [data-testid="action-bar-row"] [class*="legacy-button-primary"],
 [data-testid="player-controls"] [class*="legacy-button-primary"]{
  --encore-graphic-size-decorative-base: 36px !important;
- border: 2px solid var(--currentcolor)
+ border: 4px solid var(--currentcolor) !important;
 }
 
 /* This one's for the now ENLARGED playlist play button triangle. */
