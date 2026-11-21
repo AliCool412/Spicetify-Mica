@@ -207,7 +207,8 @@ dialog button *,
   max-height: max-content !important;
 }
 
-.Dropdown-option:hover{
+.Dropdown-option:hover,
+[data-encore-id="popover"] > * > *:hover{
   background: #343434 !important;
 }
 
@@ -370,7 +371,8 @@ svg{
 }
 
 .Dropdown-control:hover,
-.main-contextMenu-menuItem:hover{
+.main-contextMenu-menuItem:hover,
+[data-encore-id="popover"] > * > *:hover{
   background: #CCCCCC !important;
 }
 
