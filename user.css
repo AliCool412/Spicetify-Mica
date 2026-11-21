@@ -19,8 +19,6 @@ body,
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
   --spice-tab-active: #DDDDDD11 !important;
-  --spice-main-elevated: #FFFFFF11 !important;
-  --spice-highlight-elevated: #FFFFFF11 !important;
   --text-subdued: #DDDDDD !important;
   --center-ui-bg: #FFFFFF11 !important;
   --center-ui-border: none !important;
@@ -344,7 +342,6 @@ body,
   --spice-tab-active: #DDDDDD !important;
   --spice-main-elevated: #DDDDDD !important;
   --background-highlight: #00000022 !important;
-  --spice-highlight-elevated: #00000022 !important;
   --text-subdued: #222222 !important;
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
