@@ -6,6 +6,8 @@ body,
   --currentcolor: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
   --encore-icon-fill: var(--currentcolor) !important;
+  --decorative-subdued: #FFFFFF11 !important;
+  --background-press: #FFFFFF11 !important;
   --text-bright-accent: var(--currentcolor) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
@@ -159,7 +161,7 @@ select optgroup {
 
 [data-testid="action-bar-row"] [class*="legacy-button-primary"],
 [data-testid="player-controls"] [class*="legacy-button-primary"],
-[data-testid="topbar-content"] [class*="legacy-button-primary"] {
+* [class*="legacy-button-primary"]:not([class*="--medium"] [class*="legacy-button-primary"]) {
  --encore-graphic-size-decorative-base: 36px !important;
  border: 4px solid var(--currentcolor) !important;
 }
@@ -328,6 +330,8 @@ body,
   --background-noise: #FFFFFF99 !important;
   --background-highlight: #00000022 !important;
   --background-elevated-press: #CCCCCC !important;
+  --decorative-subdued: #CCCCCC !important;
+  --background-press: #CCCCCC !important;
   --spice-text: #000000 !important;
   --spice-subtext: #000000 !important;
   --spice-card: #DDDDDD !important;
