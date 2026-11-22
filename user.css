@@ -286,7 +286,7 @@ textarea,
   background: var(--center-ui-bg) !important;
   border: var(--center-ui-border) !important;
   border-radius: 8px !important;
-  width: 100.6% !important;
+  width: calc(100% + var(--panel-gap)) !important;
 }
 
 /* This is to make sure the main view becomes transparent when library expanded */
