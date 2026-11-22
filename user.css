@@ -4,29 +4,30 @@ body,
 [class*="encore-"],
 [class*="encore-"] * {
   --currentcolor: var(--spice-subtext) !important;
-  --spice-button-active: var(--spice-text) !important;
-  --spice-main-transition: none !important;
-  --spice-sidebar: none !important;
-  --spice-main: none !important;
-  --background-noise: #00000099 !important;
-  --spice-button: var(--spice-subtext) !important;
   --encore-overlay-box-shadow: 0 0px 0px !important;
   --encore-icon-fill: var(--currentcolor) !important;
   --text-bright-accent: var(--currentcolor) !important;
   --carousel-start-chevron-gradient: none !important;
   --essential-bright-accent: var(--spice-text) !important;
+  --background-base: transparent !important;
+  --background-noise: #00000099 !important;
   --background-highlight: #FFFFFF11 !important;
+  --background-elevated-press: #FFFFFF33 !important;
+  --spice-main: none !important;
+  --spice-main-transition: none !important;
+  --spice-sidebar: none !important;
+  --spice-button: var(--spice-subtext) !important;
+  --spice-button-active: var(--spice-text) !important;
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
   --spice-tab-active: #DDDDDD11 !important;
+  --spice-main-elevated: transparent !important;
+  --spice-highlight-elevated: #FFFFFF11 !important;
   --center-ui-bg: #FFFFFF11 !important;
   --center-ui-border: none !important;
   --popout: #2B2B2B !important;
   --input: #2B2B2B99 !important;
   --topbar: #202020CC !important;
-  --spice-highlight-elevated: #FFFFFF11 !important;
-  --background-base: transparent !important;
-  --spice-main-elevated: transparent !important;
 }
 
 /* This above is the baseline for making everything transparent, I'm gonna write notes in this CSS snippet because Spotify keeps using obfuscated css names and I'm highkey getting sick of this shit so I'm putting this in here to make sure to remind myself which elements I changed in case the class names change for the millionth fucking time, all notations I've added are referring to the elements mentioned above them, not below.*/
@@ -320,27 +321,24 @@ body,
 [class*="encore-"],
 [class*="encore-"] * {
   --background-noise: #FFFFFF99 !important;
+  --background-highlight: #00000022 !important;
+  --background-elevated-press: #CCCCCC !important;
   --spice-text: #000000 !important;
   --spice-subtext: #000000 !important;
-  --text-base: #121212 !important;
-  --text-subdued: #000000 !important;
   --spice-card: #DDDDDD !important;
   --spice-rgb-text: #000000 !important;
   --spice-player: #FFFFFF !important;
   --spice-tab-active: #DDDDDD !important;
-  --spice-main-elevated: #DDDDDD !important;
-  --background-highlight: #00000022 !important;
+  --spice-highlight-elevated: #CCCCCC !important;
   --center-ui-bg: transparent !important;
   --center-ui-border: 1px solid #00000022 !important;
   --popout: #EEEEEE !important;
   --input: #FFFFFF !important;
   --topbar: #FFFFFFCC !important;
-  --spice-highlight-elevated: #CCCCCC !important;
-
 }
 
 :root *{
-  -webkit-text-fill-color: #000000 !important;
+  -webkit-text-fill-color: #121212 !important;
 }
 
 svg:hover{
@@ -348,7 +346,7 @@ svg:hover{
 }
 
 svg{
-  fill: #111111 !important;
+  fill: #121212 !important;
 }
 
 .Dropdown-option:hover{
@@ -375,6 +373,13 @@ select option,
 select optgroup {
   background-color: var(--popout) !important;
   color: #000000 !important;
+}
+
+[src*="equaliser"],
+[class*="button__icon-wrapper"],
+[class*="equaliser"],
+[data-testid="settings-page"] canvas{
+  filter: brightness(0%) !important;
 }
 
 /* This above has the overrides for light mode */
