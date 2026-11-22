@@ -319,6 +319,9 @@ input[type="checkbox"] + *:hover{
 input[type="checkbox"] + *{
   background: #AAAAAA99 !important;
 }
+.main-dropDown-dropDown{
+  background: var(--spice-background-elevated) !important;
+}
 
 /* This is for toggles */
 
