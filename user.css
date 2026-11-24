@@ -15,6 +15,7 @@ body,
   --background-noise: #00000099 !important;
   --background-highlight: #FFFFFF11 !important;
   --background-elevated-press: #FFFFFF33 !important;
+  --section-background-base: var(--spice-highlight-elevated) !important;
   --spice-main: none !important;
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
