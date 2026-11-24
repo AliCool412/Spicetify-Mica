@@ -14,10 +14,7 @@ body,
   --background-base: transparent !important;
   --background-noise: #00000099 !important;
   --background-highlight: #FFFFFF11 !important;
-  --background-elevated-base: transparent !important;
-  --background-elevated-highlight: #FFFFFF11 !important;
   --background-elevated-press: #FFFFFF33 !important;
-  --section-background-base: var(--center-ui-bg) !important;
   --spice-main: none !important;
   --spice-main-transition: none !important;
   --spice-sidebar: none !important;
@@ -26,8 +23,8 @@ body,
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
   --spice-tab-active: #DDDDDD11 !important;
-  --spice-main-elevated: var(--popout) !important;
-  --spice-highlight-elevated: #343434 !important;
+  --spice-main-elevated: transparent !important;
+  --spice-highlight-elevated: #FFFFFF11 !important;
   --center-ui-bg: #FFFFFF11 !important;
   --center-ui-border: none !important;
   --popout: #2B2B2B !important;
@@ -67,6 +64,7 @@ dialog .encore-light-theme,
 .Dropdown-menu,
 [data-encore-id="popover"],
 .main-actionBar-ActionBarContainer,
+[data-testid="progress-label"],
 [id="search-dropdown"] > :nth-child(1) {
   background: var(--popout) !important;
   border-radius: 8px !important;
