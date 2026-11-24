@@ -155,7 +155,12 @@ select optgroup {
 [data-testid="settings-page"] canvas{
   filter: saturate(0%) !important;
 }
-/* This one's to make the playing GIF and equalizer become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
+
+svg circle{
+  fill: var(--currentcolor) !important;
+}
+
+/* Those are to make the playing GIF and equalizer become monochromatic, to blend in with the light grey/white accent color, and also the "added to playlist" GIF. */
 
 .marketplace-header{
   position: relative !important;
