@@ -83,6 +83,10 @@ select optgroup {
   color: #FFFFFF !important;
 }
 
+[data-encore-id="menu"]{
+  filter: none !important;
+}
+
 /* And this is to make sure only the menus and tooltips are spared from transparency, of course there are still some other stuff spared from transparency which I won't bother to list here but you're gonna see for yourself with usage of this theme. */
 
 [data-scroll-size-invariant-class],
