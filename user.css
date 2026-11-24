@@ -23,7 +23,7 @@ body,
   --spice-player: #AAAAAA11 !important;
   --spice-card: #FFFFFF11 !important;
   --spice-tab-active: #DDDDDD11 !important;
-  --spice-main-elevated: transparent !important;
+  --spice-main-elevated: var(--popout) !important;
   --spice-highlight-elevated: #FFFFFF11 !important;
   --center-ui-bg: #FFFFFF11 !important;
   --center-ui-border: none !important;
