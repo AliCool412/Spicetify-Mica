@@ -24,7 +24,7 @@ body,
   --spice-card: #FFFFFF11 !important;
   --spice-tab-active: #DDDDDD11 !important;
   --spice-main-elevated: var(--popout) !important;
-  --spice-highlight-elevated: #FFFFFF11 !important;
+  --spice-highlight-elevated: #343434 !important;
   --center-ui-bg: #FFFFFF11 !important;
   --center-ui-border: none !important;
   --popout: #2B2B2B !important;
